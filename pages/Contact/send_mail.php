@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Sender & Receiver
         $mail->setFrom('hygineapparatus@gmail.com', 'Hygiene Apparatus & Service');
         // $mail->addAddress('hygineapparatus@gmail.com');
-        $mail->addAddress('shuruthimanoharan8@gmail.com');
+        $mail->addAddress('hygineapparatus@gmail.com');
 
         // Reply button will open customer's email
         $mail->addReplyTo($email, $name);

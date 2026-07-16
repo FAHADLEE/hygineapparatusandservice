@@ -139,7 +139,7 @@
 
     .logo {
       width: 250px;
-      height: 85px;
+      height: 70px;
       object-fit: contain;
       filter: brightness(1);
       transition: transform 0.3s ease;

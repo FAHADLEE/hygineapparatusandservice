@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
     <title>hygiene products - Hygiene Apparatus & Service</title>
     <link rel="stylesheet" href="../Products/products.css" />
      <link rel="stylesheet" href="../../Styles.css" />
