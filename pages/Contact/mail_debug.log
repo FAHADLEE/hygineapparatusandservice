@@ -1,0 +1,76 @@
+[2026-07-16 09:05:37] =========================================
+[2026-07-16 09:05:37] Script started - Request Method: POST
+[2026-07-16 09:05:37] POST request received
+[2026-07-16 09:05:37] Form Data:
+[2026-07-16 09:05:37] Name: shuruthi
+[2026-07-16 09:05:37] Email: shuruthi@gmail.com
+[2026-07-16 09:05:37] Product: Vacuum Cleaners
+[2026-07-16 09:05:37] Message length: 10 characters
+[2026-07-16 09:05:37] PHPMailer instance created
+[2026-07-16 09:05:37] Configuring SMTP settings...
+[2026-07-16 09:05:37] Username set: hygineapparatus@gmail.com
+[2026-07-16 09:05:37] Password set (hidden for security)
+[2026-07-16 09:05:37] SMTP Host: smtp.gmail.com
+[2026-07-16 09:05:37] SMTP Port: 587
+[2026-07-16 09:05:37] SMTP Secure: tls
+[2026-07-16 09:05:37] Setting from address...
+[2026-07-16 09:05:37] From and To addresses set
+[2026-07-16 09:05:37] Reply-to set to: shuruthi@gmail.com
+[2026-07-16 09:05:37] Email subject set
+[2026-07-16 09:05:37] Email body generated successfully
+[2026-07-16 09:05:37] Attempting to send email...
+[2026-07-16 09:05:38] SMTP Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP a92af1059eb24-13cd4344b8bsm7709551c88.13 - gsmtp
+
+[2026-07-16 09:05:38] SMTP Debug: CLIENT -> SERVER: EHLO localhost
+
+[2026-07-16 09:05:38] SMTP Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [59.92.229.163]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2026-07-16 09:05:38] SMTP Debug: CLIENT -> SERVER: STARTTLS
+
+[2026-07-16 09:05:38] SMTP Debug: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[2026-07-16 09:05:38] SMTP Debug: CLIENT -> SERVER: EHLO localhost
+
+[2026-07-16 09:05:39] SMTP Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [59.92.229.163]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2026-07-16 09:05:39] SMTP Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[2026-07-16 09:05:39] SMTP Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[2026-07-16 09:05:39] SMTP Debug: CLIENT -> SERVER: [credentials hidden]
+[2026-07-16 09:05:39] SMTP Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[2026-07-16 09:05:39] SMTP Debug: CLIENT -> SERVER: [credentials hidden]
+[2026-07-16 09:05:40] SMTP Debug: SERVER -> CLIENT: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-13cd4344b8bsm7709551c88.13 - gsmtp
+
+[2026-07-16 09:05:40] SMTP Debug: SMTP ERROR: Password command failed: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-13cd4344b8bsm7709551c88.13 - gsmtp
+
+[2026-07-16 09:05:40] SMTP Debug: SMTP Error: Could not authenticate.
+[2026-07-16 09:05:40] SMTP Debug: CLIENT -> SERVER: QUIT
+
+[2026-07-16 09:05:40] SMTP Debug: SERVER -> CLIENT: 221 2.0.0 closing connection a92af1059eb24-13cd4344b8bsm7709551c88.13 - gsmtp
+
+[2026-07-16 09:05:40] SMTP Debug: SMTP Error: Could not authenticate.
+[2026-07-16 09:05:40] ========== EXCEPTION CAUGHT ==========
+[2026-07-16 09:05:40] Error Message: SMTP Error: Could not authenticate.
+[2026-07-16 09:05:40] Error Code: 0
+[2026-07-16 09:05:40] Error File: C:\xampp\htdocs\hygineapparatusandservice\PHPMailer\src\PHPMailer.php
+[2026-07-16 09:05:40] Error Line: 2444
+[2026-07-16 09:05:40] SMTP Error Info: SMTP Error: Could not authenticate.
+[2026-07-16 09:05:40] ======================================
