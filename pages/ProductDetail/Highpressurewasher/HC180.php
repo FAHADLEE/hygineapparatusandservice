@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 180 - High Pressure Washer Machine | Hygiene Apparatus</title>
+    <title>HAP 180 - High Pressure Washer Machine | Hygiene Apparatus</title>
     <link rel="stylesheet" href="../../../Styles.css" />
      <link rel="stylesheet" href="../../Contact/contact.css" />
     <link rel="stylesheet" href="../../ProductDetail/productdetail.css" />
@@ -88,7 +88,7 @@
             <span class="separator">/</span>
             <a href="../../Products/Highpressurewasher.php">High Pressure Washers</a>
             <span class="separator">/</span>
-            <span class="current">HC 180</span>
+            <span class="current">HAP 180</span>
         </div>
 
         <!-- Product Layout -->
@@ -107,10 +107,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 180</span>
-                <h1>HC <span>180</span></h1>
+                <span class="product-code">Model: HAP 180</span>
+                <h1>HAP <span>180</span></h1>
                 <p class="description">
-                    <strong>HC 180</strong> High Pressure washer SP614 is a high-performance jet cleaner that launches the water with a powerful 614 bar jet stream. This technology comes with a power-packed motor of 5hp that perfectly cleans every surface such as industrial vehicles, floors, Walls and outdoor area.
+                    <strong>HAP 180</strong> High Pressure washer SP614 is a high-performance jet cleaner that launches the water with a powerful 614 bar jet stream. This technology comes with a power-packed motor of 5hp that perfectly cleans every surface such as industrial vehicles, floors, Walls and outdoor area.
                 </p>
 
                 <!-- Key Specs -->
@@ -175,7 +175,7 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 180</strong> is a High Pressure washer SP614 is a high-performance jet cleaner that launches the water with a powerful 614 bar jet stream. This technology comes with a power-packed motor of 5hp that perfectly cleans every surface such as industrial vehicles, floors, Walls and outdoor area.
+                    The <strong>HAP 180</strong> is a High Pressure washer SP614 is a high-performance jet cleaner that launches the water with a powerful 614 bar jet stream. This technology comes with a power-packed motor of 5hp that perfectly cleans every surface such as industrial vehicles, floors, Walls and outdoor area.
                 </p>
                 <p>
                     Our machines are designed by expert design engineers after long time research, ensuring superior performance, durability, and reliability for all your cleaning needs.
@@ -192,7 +192,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 180</td>
+                        <td>HAP 180</td>
                     </tr>
                     <tr>
                         <td>Type</td>

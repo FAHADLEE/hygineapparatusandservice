@@ -272,25 +272,25 @@
         // ===== VACUUM CLEANER PRODUCTS DATA =====
         const vacuumProducts = [
             { 
-                name: "HC 160", 
+                name: "HAP 160", 
                 image: "../assets/HighPressureWasher/HC160.png",
                 page:'../ProductDetail/Highpressurewasher/HC160.php'
                 
             },
             { 
-                name: "HC 180", 
+                name: "HAP 180", 
                 image: "../assets/HighPressureWasher/HC180.png",
                 page:'../ProductDetail/Highpressurewasher/HC180.php'
                 
             },
             { 
-                name: "HC 210", 
+                name: "HAP 210", 
                 image: "../assets/HighPressureWasher/HC210.png",
                 page:'../ProductDetail/Highpressurewasher/HC210.php'
                
             },
             { 
-                name: "HC 614", 
+                name: "HAP 614", 
                 image: "../assets/HighPressureWasher/HC614.png",
                 page:'../ProductDetail/Highpressurewasher/HC614.php'
                 

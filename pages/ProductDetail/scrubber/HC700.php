@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 700 - Floor Scrubber Machine | Hygiene Apparatus</title>
+    <title>HAP 700 - Floor Scrubber Machine | Hygiene Apparatus</title>
      <link rel="stylesheet" href="../../../Styles.css" />
       <link rel="stylesheet" href="../../Contact/contact.css" />
      <link rel="stylesheet" href="../../ProductDetail/productdetail.css" />
@@ -89,7 +89,7 @@
             <span class="separator">/</span>
             <a href="../../Products/Scrubber.php">Scrubber</a>
             <span class="separator">/</span>
-            <span class="current">HC 700</span>
+            <span class="current">HAP 700</span>
         </div>
 
         <!-- Product Layout -->
@@ -97,7 +97,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../../assets/Scrubber/HC700.png" alt="HC 700 Floor Scrubber Machine" class="main-image" />
+                <img src="../../assets/Scrubber/HC700.png" alt="HAP 700 Floor Scrubber Machine" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> Powerful Motor
                 </span>
@@ -106,10 +106,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 700</span>
-                <h1>HC <span>700</span></h1>
+                <span class="product-code">Model: HAP 700</span>
+                <h1>HAP <span>700</span></h1>
                 <p class="description">
-                    <strong>HC 700</strong> is a heavy-duty floor scrubber machine designed for aggressive deep cleaning. It offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing.
+                    <strong>HAP 700</strong> is a heavy-duty floor scrubber machine designed for aggressive deep cleaning. It offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing.
                 </p>
 
                 <!-- Key Specs -->
@@ -177,10 +177,10 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 700</strong> is a heavy-duty floor scrubber machine that enables you to improve your floor cleaning and care tasks. It provides superb performance, designed especially for aggressive deep cleaning.
+                    The <strong>HAP 700</strong> is a heavy-duty floor scrubber machine that enables you to improve your floor cleaning and care tasks. It provides superb performance, designed especially for aggressive deep cleaning.
                 </p>
                 <p>
-                    The HC 700 offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing. Built with durability and performance in mind, this machine is perfect for professional and industrial use.
+                    The HAP 700 offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing. Built with durability and performance in mind, this machine is perfect for professional and industrial use.
                 </p>
 
                 <div class="chart-container">
@@ -231,7 +231,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 700</td>
+                        <td>HAP 700</td>
                     </tr>
                     <tr>
                         <td>Type</td>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 4045 - Walk Behind Floor Scrubber Drier | Hygiene Apparatus</title>
+    <title>HAP 4045 - Walk Behind Floor Scrubber Drier | Hygiene Apparatus</title>
     <link rel="stylesheet" href="../../../Styles.css" />
      <link rel="stylesheet" href="../../Contact/contact.css" />
      <link rel="stylesheet" href="../productdetail.css" />
@@ -88,7 +88,7 @@
             <span class="separator">/</span>
             <a href="../../Products/scrubbermachine.php">Scrubber Machines</a>
             <span class="separator">/</span>
-            <span class="current">HC 4045</span>
+            <span class="current">HAP 4045</span>
         </div>
 
         <!-- Product Layout -->
@@ -107,10 +107,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 4045</span>
-                <h1>HC <span>4045</span></h1>
+                <span class="product-code">Model: HAP 4045</span>
+                <h1>HAP <span>4045</span></h1>
                 <p class="description">
-                    <strong>HC 4045</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, featuring a stainless steel chassis and a power head folding system.
+                    <strong>HAP 4045</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, featuring a stainless steel chassis and a power head folding system.
                 </p>
 
                 <!-- Key Specs -->
@@ -178,17 +178,17 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 4045</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, making it the ideal choice for various cleaning applications.
+                    The <strong>HAP 4045</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, making it the ideal choice for various cleaning applications.
                 </p>
                 <p>
-                    The machine comes with a <strong>stainless steel chassis</strong> and a power head folding system for easy storage and transport. The HC 4045 is ideally suited for indoor cleaning from light to medium tasks such as railway stations, warehouses, educational institutions, small supermarkets, and more.
+                    The machine comes with a <strong>stainless steel chassis</strong> and a power head folding system for easy storage and transport. The HAP 4045 is ideally suited for indoor cleaning from light to medium tasks such as railway stations, warehouses, educational institutions, small supermarkets, and more.
                 </p>
                 <p>
                     With its adjustable handle, the machine can be used at your convenient height, reducing operator fatigue and improving productivity.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../../assets/scrubbermachinechart/HC4045chart.jpg" alt="HC 4045 Specifications Chart" />
+                    <img src="../../assets/scrubbermachinechart/HC4045chart.jpg" alt="HAP 4045 Specifications Chart" />
                 </div>
             </div>
 
@@ -235,7 +235,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 4045</td>
+                        <td>HAP 4045</td>
                     </tr>
                     <tr>
                         <td>Type</td>

@@ -273,19 +273,19 @@
         // ===== VACUUM CLEANER PRODUCTS DATA =====
         const vacuumProducts = [
             { 
-                name: "HC 55", 
+                name: "HAP 55", 
                 image: "../assets/Sweepermachine/HC55.png",
                 page:"../ProductDetail/Sweepermachine/HC55.php"
                 
             },
             { 
-                name: "HC 101", 
+                name: "HAP 101", 
                 image: "../assets/Sweepermachine/HC101.png",
                 page:"../ProductDetail/Sweepermachine/HC101.php"
                 
             },
             { 
-                name: "HC 102", 
+                name: "HAP 102", 
                 image: "../assets/Sweepermachine/HC102.png",
                 page:"../ProductDetail/Sweepermachine/HC102.php"
                

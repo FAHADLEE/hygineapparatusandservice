@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 614 - High Pressure Washer Machine | Hygiene Apparatus</title>
+    <title>HAP 614 - High Pressure Washer Machine | Hygiene Apparatus</title>
     <link rel="stylesheet" href="../../../Styles.css" />
      <link rel="stylesheet" href="../../Contact/contact.css" />
     <link rel="stylesheet" href="../../ProductDetail/productdetail.css" />
@@ -89,7 +89,7 @@
             <span class="separator">/</span>
             <a href="../../Products/Highpressurewasher.phpl">High Pressure Washers</a>
             <span class="separator">/</span>
-            <span class="current">HC 614</span>
+            <span class="current">HAP 614</span>
         </div>
 
         <!-- Product Layout -->
@@ -106,10 +106,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 614</span>
-                <h1>HC <span>614</span></h1>
+                <span class="product-code">Model: HAP 614</span>
+                <h1>HAP <span>614</span></h1>
                 <p class="description">
-                    <strong>HC 614</strong>High Pressure jet machine is the perfect machine that is used at the place where we cannot use single disc machine like uneven surface, block type floor, boundary walls, parking area, Car washing. Swimming pool. Our machines are designed by expert design engineer after long time research.ons, small super market and other .
+                    <strong>HAP 614</strong>High Pressure jet machine is the perfect machine that is used at the place where we cannot use single disc machine like uneven surface, block type floor, boundary walls, parking area, Car washing. Swimming pool. Our machines are designed by expert design engineer after long time research.ons, small super market and other .
                 </p>
 
                 <!-- Key Specs -->
@@ -174,7 +174,7 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 614</strong> is a high pressure jet machine that is perfect for use at places where we cannot use single disc machines like uneven surfaces, block type floors, boundary walls, parking areas, car washing, and swimming pools.
+                    The <strong>HAP 614</strong> is a high pressure jet machine that is perfect for use at places where we cannot use single disc machines like uneven surfaces, block type floors, boundary walls, parking areas, car washing, and swimming pools.
                 </p>
                 <p>
                     Our machines are designed by expert design engineers after long time research, ensuring superior performance, durability, and reliability for all your cleaning needs.
@@ -191,7 +191,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 614</td>
+                        <td>HAP 614</td>
                     </tr>
                     <tr>
                         <td>Type</td>

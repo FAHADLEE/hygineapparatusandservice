@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 55 - Walk Behind Sweeper Machine | Hygiene Apparatus</title>
+    <title>HAP 55 - Walk Behind Sweeper Machine | Hygiene Apparatus</title>
     <link rel="stylesheet" href="../../../Styles.css" />
      <link rel="stylesheet" href="../../Contact/contact.css" />
     <link rel="stylesheet" href="../../ProductDetail/productdetail.css" />
@@ -90,7 +90,7 @@
             <span class="separator">/</span>
             <a href="../../Products/sweepermachine.php">Sweeper Machines</a>
             <span class="separator">/</span>
-            <span class="current">HC 55</span>
+            <span class="current">HAP 55</span>
         </div>
 
         <!-- Product Layout -->
@@ -98,7 +98,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../../assets/Sweepermachine/HC55.png" alt="HC 55 Walk Behind Sweeper Machine" class="main-image" />
+                <img src="../../assets/Sweepermachine/HC55.png" alt="HAP 55 Walk Behind Sweeper Machine" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> Best Seller
                 </span>
@@ -109,10 +109,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 55</span>
-                <h1>HC <span>55</span></h1>
+                <span class="product-code">Model: HAP 55</span>
+                <h1>HAP <span>55</span></h1>
                 <p class="description">
-                    <strong>HC 55</strong> is a walk behind manual sweeper machine that is better than manual sweeping on roads or outdoor areas. It is <strong>10 times faster</strong> than conventional sweeping methods, saving time and labor costs.
+                    <strong>HAP 55</strong> is a walk behind manual sweeper machine that is better than manual sweeping on roads or outdoor areas. It is <strong>10 times faster</strong> than conventional sweeping methods, saving time and labor costs.
                 </p>
 
                 <!-- Key Specs -->
@@ -180,7 +180,7 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 55</strong> is a walk behind manual sweeper machine that is better than manual sweeping on roads or outdoor areas. It is <strong>10 times faster</strong> than conventional sweeping methods, saving time and labor costs.
+                    The <strong>HAP 55</strong> is a walk behind manual sweeper machine that is better than manual sweeping on roads or outdoor areas. It is <strong>10 times faster</strong> than conventional sweeping methods, saving time and labor costs.
                 </p>
                 <p>
                     The machine comes with a brush pressure adjustment knob that enables optimum adaptation of the brushes to all floor conditions and types of dirt. The newly designed split-half brooms ensure easy replacement and cleaning of the brush and bristles.
@@ -190,7 +190,7 @@
                 </p>
 
                 <div class="chart-container">
-                    <img src="../../assets/Sweeperchart/HC55chart.jpg" alt="HC 55 Specifications Chart" />
+                    <img src="../../assets/Sweeperchart/HC55chart.jpg" alt="HAP 55 Specifications Chart" />
                 </div>
             </div>
 
@@ -237,7 +237,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 55</td>
+                        <td>HAP 55</td>
                     </tr>
                     <tr>
                         <td>Type</td>

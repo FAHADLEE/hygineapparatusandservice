@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 5056 - Walk Behind Floor Scrubber Drier | Hygiene Apparatus</title>
+    <title>HAP 5056 - Walk Behind Floor Scrubber Drier | Hygiene Apparatus</title>
    <link rel="stylesheet" href="../../../Styles.css" />
     <link rel="stylesheet" href="../../Contact/contact.css" />
     <link rel="stylesheet" href="../productdetail.css" />
@@ -88,7 +88,7 @@
             <span class="separator">/</span>
             <a href="../../Products/scrubbermachine.php">Scrubber Machines</a>
             <span class="separator">/</span>
-            <span class="current">HC 5056</span>
+            <span class="current">HAP 5056</span>
         </div>
 
         <!-- Product Layout -->
@@ -96,7 +96,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../../assets/ScrubberMachine/HC5056.png" alt="HC 5056 Walk Behind Floor Scrubber Drier" class="main-image" />
+                <img src="../../assets/ScrubberMachine/HC5056.png" alt="HAP 5056 Walk Behind Floor Scrubber Drier" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> Best Seller
                 </span>
@@ -107,10 +107,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 5056</span>
-                <h1>HC <span>5056</span></h1>
+                <span class="product-code">Model: HAP 5056</span>
+                <h1>HAP <span>5056</span></h1>
                 <p class="description">
-                    <strong>HC 5056</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, featuring a stainless steel chassis and a power head folding system.
+                    <strong>HAP 5056</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, featuring a stainless steel chassis and a power head folding system.
                 </p>
 
                 <!-- Key Specs -->
@@ -178,17 +178,17 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 5056</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, designed for indoor cleaning from light to medium tasks.
+                    The <strong>HAP 5056</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is very user-friendly and efficient, designed for indoor cleaning from light to medium tasks.
                 </p>
                 <p>
                     The machine comes with a stainless steel chassis and a power head folding system, ensuring durability and easy storage. The adjustable handle allows you to set it at your convenient height for comfortable operation.
                 </p>
                 <p>
-                    The HC 5056 is ideally suited for indoor cleaning applications such as railway stations, warehouses, educational institutions, small supermarkets, and other commercial spaces.
+                    The HAP 5056 is ideally suited for indoor cleaning applications such as railway stations, warehouses, educational institutions, small supermarkets, and other commercial spaces.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../../assets/scrubbermachinechart/HC5056chart.jpg" alt="HC 5056 Specifications Chart" />
+                    <img src="../../assets/scrubbermachinechart/HC5056chart.jpg" alt="HAP 5056 Specifications Chart" />
                 </div>
             </div>
 
@@ -235,7 +235,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 5056</td>
+                        <td>HAP 5056</td>
                     </tr>
                     <tr>
                         <td>Type</td>

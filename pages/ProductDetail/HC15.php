@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" href="../../pages/assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 15 - Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
+    <title>HAP 15 - Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
     <link rel="stylesheet" href="../../Styles.css" />
      <link rel="stylesheet" href="../Contact/contact.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
@@ -92,7 +92,7 @@
             <span class="separator">/</span>
             <a href="../Products/Vaccumecleaners.php">Vacuum Cleaners</a>
             <span class="separator">/</span>
-            <span class="current">HC 380</span>
+            <span class="current">HAP 380</span>
         </div>
 
         <!-- Product Layout -->
@@ -100,7 +100,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../assets/VaccumeCleaner/HC15.png" alt="HC 380 Wet & Dry Vacuum Cleaner" class="main-image" />
+                <img src="../assets/VaccumeCleaner/HC15.png" alt="HAP 380 Wet & Dry Vacuum Cleaner" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> 1000W Motor
                 </span>
@@ -108,10 +108,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 380</span>
-                <h1>HC 380</h1>
+                <span class="product-code">Model: HAP 380</span>
+                <h1>HAP 380</h1>
                 <p class="description">
-                    HC 380 is a wet & dry vacuum cleaner with a stainless steel container capacity of 15 liters, 
+                    HAP 380 is a wet & dry vacuum cleaner with a stainless steel container capacity of 15 liters, 
                     1000-watt powerful motor, and powerful suction.
                 </p>
 
@@ -180,18 +180,18 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 380</strong> is a versatile wet and dry vacuum cleaner designed for professional and 
+                    The <strong>HAP 380</strong> is a versatile wet and dry vacuum cleaner designed for professional and 
                     industrial use. With a 15-liter stainless steel container and a powerful 1000-watt motor, 
                     it delivers exceptional suction power for both wet and dry cleaning tasks.
                 </p>
                 <p>
-                    Built with durability in mind, the HC 380 features a robust stainless steel construction 
+                    Built with durability in mind, the HAP 380 features a robust stainless steel construction 
                     that resists corrosion and ensures long-lasting performance. The machine comes with a complete 
                     set of accessories for immediate use.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../assets/vaccumcleanerpage/HC15chart.jpg" alt="HC 380 Specifications Chart" />
+                    <img src="../assets/vaccumcleanerpage/HC15chart.jpg" alt="HAP 380 Specifications Chart" />
                 </div>
             </div>
 
@@ -238,7 +238,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 380</td>
+                        <td>HAP 380</td>
                     </tr>
                     <tr>
                         <td>Type</td>

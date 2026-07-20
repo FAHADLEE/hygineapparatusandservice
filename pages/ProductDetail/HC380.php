@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="icon" type="image/png" href="../../pages/assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 380 - Heavy Duty Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
+    <title>HAP 380 - Heavy Duty Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
      <link rel="stylesheet" href="../../Styles.css" />
      <link rel="stylesheet" href="../Contact/contact.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
@@ -88,7 +88,7 @@
             <span class="separator">/</span>
             <a href="../Products/Vaccumecleaners.php">Vacuum Cleaners</a>
             <span class="separator">/</span>
-            <span class="current">HC 380</span>
+            <span class="current">HAP 380</span>
         </div>
 
         <!-- Product Layout -->
@@ -96,7 +96,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../assets/VaccumeCleaner/HC380.png" alt="HC 380 Heavy Duty Wet & Dry Vacuum Cleaner" class="main-image" />
+                <img src="../assets/VaccumeCleaner/HC380.png" alt="HAP 380 Heavy Duty Wet & Dry Vacuum Cleaner" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> 3000W Motor
                 </span>
@@ -107,10 +107,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 380</span>
-                <h1>HC <span>380</span></h1>
+                <span class="product-code">Model: HAP 380</span>
+                <h1>HAP <span>380</span></h1>
                 <p class="description">
-                    <strong>HC 380</strong> is a heavy-duty wet & dry vacuum cleaner with a stainless steel container capacity of <strong>80 liters</strong>, 
+                    <strong>HAP 380</strong> is a heavy-duty wet & dry vacuum cleaner with a stainless steel container capacity of <strong>80 liters</strong>, 
                     <strong>3000-watt</strong> powerful motor, and exceptional suction power for industrial applications.
                 </p>
 
@@ -179,19 +179,19 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 380</strong> is a heavy-duty industrial wet and dry vacuum cleaner designed for 
+                    The <strong>HAP 380</strong> is a heavy-duty industrial wet and dry vacuum cleaner designed for 
                     demanding cleaning applications. With a massive <strong>80-liter</strong> stainless steel container 
                     and a powerful <strong>3000-watt</strong> motor, it delivers exceptional suction power for 
                     both wet and dry cleaning tasks in industrial environments.
                 </p>
                 <p>
-                    Built with industrial-grade durability, the HC 380 features a robust stainless steel construction 
+                    Built with industrial-grade durability, the HAP 380 features a robust stainless steel construction 
                     that resists corrosion and ensures long-lasting performance even in the harshest conditions. 
                     The machine comes with a complete set of accessories for immediate use.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../assets/vaccumcleanerpage/HC380chart.jpg" alt="HC 380 Specifications Chart" />
+                    <img src="../assets/vaccumcleanerpage/HC380chart.jpg" alt="HAP 380 Specifications Chart" />
                 </div>
             </div>
 
@@ -238,7 +238,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 380</td>
+                        <td>HAP 380</td>
                     </tr>
                     <tr>
                         <td>Type</td>

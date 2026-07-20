@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 2832 - Walk Behind Floor Scrubber Drier | Hygiene Apparatus</title>
+    <title>HAP 2832 - Walk Behind Floor Scrubber Drier | Hygiene Apparatus</title>
    <link rel="stylesheet" href="../../../Styles.css" />
     <link rel="stylesheet" href="../../Contact/contact.css" />
      <link rel="stylesheet" href="../productdetail.css" />
@@ -88,7 +88,7 @@
             <span class="separator">/</span>
             <a href="../../Products/scrubbermachine.php">Scrubber Machines</a>
             <span class="separator">/</span>
-            <span class="current">HC 2832</span>
+            <span class="current">HAP 2832</span>
         </div>
 
         <!-- Product Layout -->
@@ -96,7 +96,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../../assets/ScrubberMachine/HC2832.png" alt="HC 2832 Walk Behind Floor Scrubber Drier" class="main-image" />
+                <img src="../../assets/ScrubberMachine/HC2832.png" alt="HAP 2832 Walk Behind Floor Scrubber Drier" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> Professional Grade
                 </span>
@@ -107,10 +107,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 2832</span>
-                <h1>HC <span>2832</span></h1>
+                <span class="product-code">Model: HAP 2832</span>
+                <h1>HAP <span>2832</span></h1>
                 <p class="description">
-                    <strong>HC 2832</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is user-friendly, efficient, and comes with a stainless steel chassis and power head folding system.
+                    <strong>HAP 2832</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is user-friendly, efficient, and comes with a stainless steel chassis and power head folding system.
                 </p>
 
                 <!-- Key Specs -->
@@ -178,17 +178,17 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 2832</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is highly user-friendly and efficient, making it perfect for a wide range of indoor cleaning applications.
+                    The <strong>HAP 2832</strong> is a walk behind floor scrubber drier that provides the best cleaning and flexibility for larger areas. It is highly user-friendly and efficient, making it perfect for a wide range of indoor cleaning applications.
                 </p>
                 <p>
-                    The machine comes with a <strong>stainless steel chassis</strong> and a power head folding system for easy storage and maneuverability. The HC 2832 is ideally suited for indoor cleaning from light to medium tasks in various commercial and industrial settings.
+                    The machine comes with a <strong>stainless steel chassis</strong> and a power head folding system for easy storage and maneuverability. The HAP 2832 is ideally suited for indoor cleaning from light to medium tasks in various commercial and industrial settings.
                 </p>
                 <p>
                     With its adjustable handle, you can use the machine at your convenient height, ensuring comfortable operation for extended periods.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../../assets/scrubbermachinechart/HC2832chart.jpg" alt="HC 2832 Specifications Chart" />
+                    <img src="../../assets/scrubbermachinechart/HC2832chart.jpg" alt="HAP 2832 Specifications Chart" />
                 </div>
             </div>
 
@@ -235,7 +235,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 2832</td>
+                        <td>HAP 2832</td>
                     </tr>
                     <tr>
                         <td>Type</td>

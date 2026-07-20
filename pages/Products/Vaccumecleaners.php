@@ -272,24 +272,24 @@
         // ===== VACUUM CLEANER PRODUCTS DATA =====
         const vacuumProducts = [
             { 
-                name: "HC 380", 
+                name: "HAP 380", 
                 image: "../assets/VaccumeCleaner/HC380.png",
                 page:"../ProductDetail/HC380.php"
                 
             },
             { 
-                name: "HC 260", 
+                name: "HAP 260", 
                 image: "../assets/VaccumeCleaner/HC260.png",
                 page:"../ProductDetail/HC260.php"
                 
             },
             { 
-                name: "HC 30", 
+                name: "HAP 30", 
                 image: "../assets/VaccumeCleaner/HC30.png",
                  page:"../ProductDetail/HC30.php"
             },
             { 
-                name: "HC 15", 
+                name: "HAP 15", 
                 image: "../assets/VaccumeCleaner/HC15.png",
                 page:"../ProductDetail/HC15.php"
                 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="icon" type="image/png" href="../../pages/assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 260 - Industrial Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
+    <title>HAP 260 - Industrial Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
      <link rel="stylesheet" href="../../Styles.css" />
      <link rel="stylesheet" href="../Contact/contact.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
@@ -88,7 +88,7 @@
             <span class="separator">/</span>
             <a href="../Products/Vaccumecleaners.php">Vacuum Cleaners</a>
             <span class="separator">/</span>
-            <span class="current">HC 260</span>
+            <span class="current">HAP 260</span>
         </div>
 
         <!-- Product Layout -->
@@ -96,7 +96,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../assets/VaccumeCleaner/HC260.png" alt="HC 260 Industrial Wet & Dry Vacuum Cleaner" class="main-image" />
+                <img src="../assets/VaccumeCleaner/HC260.png" alt="HAP 260 Industrial Wet & Dry Vacuum Cleaner" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> 2000W Motor
                 </span>
@@ -105,10 +105,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 260</span>
-                <h1>HC <span>260</span></h1>
+                <span class="product-code">Model: HAP 260</span>
+                <h1>HAP <span>260</span></h1>
                 <p class="description">
-                    <strong>HC 260</strong> is an industrial-grade wet & dry vacuum cleaner with a stainless steel container capacity of <strong>60 liters</strong>, 
+                    <strong>HAP 260</strong> is an industrial-grade wet & dry vacuum cleaner with a stainless steel container capacity of <strong>60 liters</strong>, 
                     <strong>2000-watt</strong> powerful motor, and exceptional suction power for professional cleaning applications.
                 </p>
 
@@ -177,19 +177,19 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 260</strong> is an industrial-grade wet and dry vacuum cleaner designed for 
+                    The <strong>HAP 260</strong> is an industrial-grade wet and dry vacuum cleaner designed for 
                     professional cleaning applications. With a <strong>60-liter</strong> stainless steel container 
                     and a powerful <strong>2000-watt</strong> motor, it delivers exceptional suction power for 
                     both wet and dry cleaning tasks in industrial and commercial environments.
                 </p>
                 <p>
-                    Built with industrial-grade durability, the HC 260 features a robust stainless steel construction 
+                    Built with industrial-grade durability, the HAP 260 features a robust stainless steel construction 
                     that resists corrosion and ensures long-lasting performance. The machine comes with a complete 
                     set of accessories for immediate use across multiple applications.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../assets/vaccumcleanerpage/Hc260chart.jpg" alt="HC 260 Specifications Chart" />
+                    <img src="../assets/vaccumcleanerpage/Hc260chart.jpg" alt="HAP 260 Specifications Chart" />
                 </div>
             </div>
 
@@ -236,7 +236,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 260</td>
+                        <td>HAP 260</td>
                     </tr>
                     <tr>
                         <td>Type</td>

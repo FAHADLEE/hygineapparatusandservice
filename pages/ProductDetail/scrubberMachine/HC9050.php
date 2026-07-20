@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 9050 - Ride-on Scrubber Drier | Hygiene Apparatus</title>
+    <title>HAP 9050 - Ride-on Scrubber Drier | Hygiene Apparatus</title>
     <link rel="stylesheet" href="../../../Styles.css" />
      <link rel="stylesheet" href="../../Contact/contact.css" />
      <link rel="stylesheet" href="../productdetail.css" />
@@ -90,7 +90,7 @@
             <span class="separator">/</span>
             <a href="../../Products/scrubbermachine.php">Scrubber Machines</a>
             <span class="separator">/</span>
-            <span class="current">HC 9050</span>
+            <span class="current">HAP 9050</span>
         </div>
 
         <!-- Product Layout -->
@@ -98,7 +98,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../../assets/ScrubberMachine/HC9050.png" alt="HC 9050 Ride-on Scrubber Drier" class="main-image" />
+                <img src="../../assets/ScrubberMachine/HC9050.png" alt="HAP 9050 Ride-on Scrubber Drier" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> Industrial Grade
                 </span>
@@ -109,10 +109,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 9050</span>
-                <h1>HC <span>9050</span></h1>
+                <span class="product-code">Model: HAP 9050</span>
+                <h1>HAP <span>9050</span></h1>
                 <p class="description">
-                    <strong>HC 9050</strong> is a ride-on scrubber drier specially designed to replace walk-behind scrubber driers. It is <strong>3 times more productive</strong> than walk-behind scrubber driers and saves on manpower and time.
+                    <strong>HAP 9050</strong> is a ride-on scrubber drier specially designed to replace walk-behind scrubber driers. It is <strong>3 times more productive</strong> than walk-behind scrubber driers and saves on manpower and time.
                 </p>
 
                 <!-- Key Specs -->
@@ -177,14 +177,14 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 9050</strong> is a ride-on scrubber drier specially designed to replace walk-behind scrubber driers. It is <strong>3 times more productive</strong> than walk-behind scrubber driers and saves on manpower and time.
+                    The <strong>HAP 9050</strong> is a ride-on scrubber drier specially designed to replace walk-behind scrubber driers. It is <strong>3 times more productive</strong> than walk-behind scrubber driers and saves on manpower and time.
                 </p>
                 <p>
                     This ride-on scrubber drier is perfect for large commercial and industrial spaces, offering superior cleaning performance with minimal effort. The machine is designed for maximum efficiency and comfort, allowing operators to cover large areas quickly and effectively.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../../assets/scrubbermachinechart/HC9050chart.jpg" alt="HC 9050 Specifications Chart" />
+                    <img src="../../assets/scrubbermachinechart/HC9050chart.jpg" alt="HAP 9050 Specifications Chart" />
                 </div>
             </div>
 
@@ -194,7 +194,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 9050</td>
+                        <td>HAP 9050</td>
                     </tr>
                     <tr>
                         <td>Type</td>

@@ -271,31 +271,31 @@
         // ===== VACUUM CLEANER PRODUCTS DATA =====
         const vacuumProducts = [
             { 
-                name: "HC 5056", 
+                name: "HAP 5056", 
                 image: "../assets/ScrubberMachine/HC5056.png",
                 page:"../ProductDetail/scrubberMachine/HC5056.php"
                 
             },
             { 
-                name: "HC 6530", 
+                name: "HAP 6530", 
                 image: "../assets/ScrubberMachine/HC6530.png",
                 page:"../ProductDetail/scrubberMachine/HC6530.php"
                 
             },
             { 
-                name: "HC 9050", 
+                name: "HAP 9050", 
                 image: "../assets/ScrubberMachine/HC9050.png",
                 page:"../ProductDetail/scrubberMachine/HC9050.php"
                
             },
             { 
-                name: "HC 4045", 
+                name: "HAP 4045", 
                 image: "../assets/ScrubberMachine/HC4045.png",
                 page:"../ProductDetail/scrubberMachine/HC4045.php"
                 
             },
             { 
-                name: "HC 2832", 
+                name: "HAP 2832", 
                 image: "../assets/ScrubberMachine/HC2832.png",
                 page:"../ProductDetail/scrubberMachine/HC2832.php"
                 

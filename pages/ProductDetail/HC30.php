@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="icon" type="image/png" href="../../pages/assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 30 - Professional Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
+    <title>HAP 30 - Professional Wet & Dry Vacuum Cleaner | Hygiene Apparatus</title>
      <link rel="stylesheet" href="../../Styles.css" />
      <link rel="stylesheet" href="../Contact/contact.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
@@ -88,14 +88,14 @@
             <span class="separator">/</span>
             <a href="../Products/Vaccumecleaners.php">Vacuum Cleaners</a>
             <span class="separator">/</span>
-            <span class="current">HC 30</span>
+            <span class="current">HAP 30</span>
         </div>
         <!-- Product Layout -->
         <div class="product-layout">
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../assets/VaccumeCleaner/HC30.png" alt="HC 30 Professional Wet & Dry Vacuum Cleaner" class="main-image" />
+                <img src="../assets/VaccumeCleaner/HC30.png" alt="HAP 30 Professional Wet & Dry Vacuum Cleaner" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> 1000W Motor
                 </span>
@@ -106,10 +106,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 30</span>
-                <h1>HC <span>30</span></h1>
+                <span class="product-code">Model: HAP 30</span>
+                <h1>HAP <span>30</span></h1>
                 <p class="description">
-                    <strong>HC 30</strong> is a professional wet & dry vacuum cleaner with a stainless steel container capacity of <strong>30 liters</strong>, 
+                    <strong>HAP 30</strong> is a professional wet & dry vacuum cleaner with a stainless steel container capacity of <strong>30 liters</strong>, 
                     <strong>1000-watt</strong> powerful motor, and exceptional suction power for versatile cleaning applications.
                 </p>
 
@@ -178,19 +178,19 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 30</strong> is a professional wet and dry vacuum cleaner designed for 
+                    The <strong>HAP 30</strong> is a professional wet and dry vacuum cleaner designed for 
                     versatile cleaning applications. With a <strong>30-liter</strong> stainless steel container 
                     and a powerful <strong>1000-watt</strong> motor, it delivers reliable suction power for 
                     both wet and dry cleaning tasks in commercial and professional environments.
                 </p>
                 <p>
-                    Built with durability in mind, the HC 30 features a robust stainless steel construction 
+                    Built with durability in mind, the HAP 30 features a robust stainless steel construction 
                     that resists corrosion and ensures long-lasting performance. The machine comes with a complete 
                     set of accessories for immediate use across multiple applications.
                 </p>
 
                 <div class="chart-container">
-                    <img src="../assets/vaccumcleanerpage/HC-30chart.jpg" alt="HC 30 Specifications Chart" />
+                    <img src="../assets/vaccumcleanerpage/HC-30chart.jpg" alt="HAP 30 Specifications Chart" />
                 </div>
             </div>
 
@@ -237,7 +237,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 30</td>
+                        <td>HAP 30</td>
                     </tr>
                     <tr>
                         <td>Type</td>

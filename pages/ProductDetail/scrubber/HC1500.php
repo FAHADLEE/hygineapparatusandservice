@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/png" href="../../assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" />
-    <title>HC 1500 - Floor Scrubber Machine | Hygiene Apparatus</title>
+    <title>HAP 1500 - Floor Scrubber Machine | Hygiene Apparatus</title>
     <link rel="stylesheet" href="../../../Styles.css" />
      <link rel="stylesheet" href="../../Contact/contact.css" />
     <link rel="stylesheet" href="../../ProductDetail/productdetail.css" />
@@ -90,7 +90,7 @@
             <span class="separator">/</span>
             <a href="../../Products/Scrubber.php">Scrubber</a>
             <span class="separator">/</span>
-            <span class="current">HC 1500</span>
+            <span class="current">HAP 1500</span>
         </div>
 
         <!-- Product Layout -->
@@ -109,10 +109,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HC 1500</span>
-                <h1>HC <span>1500</span></h1>
+                <span class="product-code">Model: HAP 1500</span>
+                <h1>HAP <span>1500</span></h1>
                 <p class="description">
-                    <strong>HC 1500</strong> is a heavy-duty floor scrubber machine designed for aggressive deep cleaning. It offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing.
+                    <strong>HAP 1500</strong> is a heavy-duty floor scrubber machine designed for aggressive deep cleaning. It offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing.
                 </p>
 
                 <!-- Key Specs -->
@@ -180,10 +180,10 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HC 1500</strong> is a heavy-duty floor scrubber machine that enables you to improve your floor cleaning and care tasks. It provides superb performance, designed especially for aggressive deep cleaning in demanding environments.
+                    The <strong>HAP 1500</strong> is a heavy-duty floor scrubber machine that enables you to improve your floor cleaning and care tasks. It provides superb performance, designed especially for aggressive deep cleaning in demanding environments.
                 </p>
                 <p>
-                    The HC 1500 offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing. Built with heavy-duty durability, this machine delivers exceptional performance for professional and industrial use.
+                    The HAP 1500 offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing. Built with heavy-duty durability, this machine delivers exceptional performance for professional and industrial use.
                 </p>
 
                 <div class="chart-container">
@@ -234,7 +234,7 @@
                 <table class="spec-table">
                     <tr>
                         <td>Model</td>
-                        <td>HC 1500</td>
+                        <td>HAP 1500</td>
                     </tr>
                     <tr>
                         <td>Type</td>
