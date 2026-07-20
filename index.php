@@ -95,30 +95,9 @@
     <section class="section" id="home">
       <div class="home-bg"></div>
       <div class="home-content">
-        <div class="home-text">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            <span>Next-Gen Cleaning Solutions</span>
-          </div>
-          <h1 class="hero-title">
-            <span class="highlight">Where Hygiene</span>
-            <span>Meets Innovation</span>
-          </h1>
-          <p class="hero-desc">Advanced cleaning technology for modern spaces — from industrial to domestic, we deliver excellence.</p>
-          <div class="hero-buttons">
-            <a href="#products" class="btn-primary">
-              Explore Products
-              <i class="ti ti-arrow-right"></i>
-            </a>
-            <a href="#about" class="btn-secondary">
-              <i class="ti ti-info-circle"></i>
-              Learn More
-            </a>
-          </div>
-        </div>
-        <!-- ===== PREMIUM AUTOMATION VISUAL ===== -->
         <div class="home-visual">
           <!-- Floating Particles -->
+          <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
@@ -154,6 +133,28 @@
 
         
         </div>
+        <div class="home-text">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Next-Gen Cleaning Solutions</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="highlight">Where Hygiene</span>
+            <span>Meets Innovation</span>
+          </h1>
+          <p class="hero-desc">Advanced cleaning technology for modern spaces — from industrial to domestic, we deliver excellence.</p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn-primary">
+              Explore Products
+              <i class="ti ti-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn-secondary">
+              <i class="ti ti-info-circle"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+       
       </div>
     </section>
 
