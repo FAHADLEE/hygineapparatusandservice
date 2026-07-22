@@ -187,9 +187,72 @@
                     This versatile sweeper is perfect for picking up dust, granules, paper, leaves, and even small screws, nails, and bolts from indoor and outdoor surfaces.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/Sweeperchart/Hc101chart.jpg" alt="HAP 55 Specifications Chart" />
-                </div>
+                </div> -->
+
+                <div class="overview-specs">
+
+    <h4 class="overview-title">
+        
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 101</td>
+
+            <th>Hopper Tank</th>
+            <td>120 ltrs</td>
+
+             <th>Productivity</th>
+            <td>8600msq/h</td>
+        </tr>
+
+        <tr>
+            <th>Forward Brush Motor</th>
+            <td>800W</td>
+
+            <th>Working Width</th>
+            <td>1360mm</td>
+
+            <th>Battery</th>
+            <td>12v*100ah*4Nos</td>
+        </tr>
+
+        <tr>
+            <th>Weight</th>
+            <td>420kg</td>
+
+            <th>Side Brush</th>
+            <td>500mm*2Nos</td>
+
+             <th>Water Tank</th>
+            <td>12 ltrs</td>
+
+            
+        </tr>
+
+          <tr>
+            <th>Dimension</th>
+            <td>1700*1200*1500mm</td>
+
+            <th>Main Brush Width</th>
+            <td>700mm</td>
+
+             <th>Filter Surface</th>
+            <td>5sqm</td>
+
+            
+        </tr>
+
+       
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->

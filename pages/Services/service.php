@@ -216,9 +216,10 @@
       transform: scale(1.08);
     }
 
-    .service-card-image .overlay-icon {
+    .overlay-icon {
       position: absolute;
-      bottom: -30px;
+      /* bottom: -20px; */
+      top:205px;
       right: 20px;
       width: 60px;
       height: 60px;
@@ -231,11 +232,11 @@
       transition: all 0.3s ease;
     }
 
-    .service-card:hover .service-card-image .overlay-icon {
+     .overlay-icon {
       transform: rotate(10deg) scale(1.1);
     }
 
-    .service-card-image .overlay-icon i {
+    .overlay-icon i {
       font-size: 28px;
       color: white;
     }
@@ -557,9 +558,9 @@
         <div class="service-card">
           <div class="service-card-image">
             <img src="../assets/Background/Background2.jpg" alt="Machine Rental Services" />
-            <div class="overlay-icon">
+            <!-- <div class="overlay-icon">
               <i class="ti ti-tools"></i>
-            </div>
+            </div> -->
           </div>
           <div class="service-card-content">
             <span class="service-number">01</span>
@@ -573,6 +574,9 @@
             <a href="#" class="btn-learn">
               Learn More <i class="ti ti-arrow-right"></i>
             </a>
+             <div class="overlay-icon">
+              <i class="ti ti-tools"></i>
+            </div>
           </div>
         </div>
 
@@ -580,9 +584,9 @@
         <div class="service-card">
           <div class="service-card-image">
             <img src="../assets/service/service1.jpg" alt="Cleaning Services" />
-            <div class="overlay-icon">
+            <!-- <div class="overlay-icon">
               <i class="ti ti-sparkles"></i>
-            </div>
+            </div> -->
           </div>
           <div class="service-card-content">
             <span class="service-number">02</span>
@@ -596,6 +600,9 @@
             <a href="#" class="btn-learn">
               Learn More <i class="ti ti-arrow-right"></i>
             </a>
+              <div class="overlay-icon">
+              <i class="ti ti-sparkles"></i>
+            </div>
           </div>
         </div>
 
@@ -603,9 +610,9 @@
         <div class="service-card">
           <div class="service-card-image">
             <img src="../assets/Background/Background3.jpg" alt="Spares & Services" />
-            <div class="overlay-icon">
+            <!-- <div class="overlay-icon">
               <i class="ti ti-repair"></i>
-            </div>
+            </div> -->
           </div>
           <div class="service-card-content">
             <span class="service-number">03</span>
@@ -619,6 +626,10 @@
             <a href="#" class="btn-learn">
               Learn More <i class="ti ti-arrow-right"></i>
             </a>
+             <div class="overlay-icon">
+              <!-- <i class="ti ti-repair"></i> -->
+               <i class="ti ti-spray"></i>         <!-- Cleaning/Sanitizing -->
+            </div>
           </div>
         </div>
 

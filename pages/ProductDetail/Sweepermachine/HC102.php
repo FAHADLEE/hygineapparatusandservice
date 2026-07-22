@@ -188,9 +188,57 @@
                     This versatile sweeper is perfect for picking up dust, granules, paper, leaves, and even small screws, nails, and bolts from indoor and outdoor surfaces.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/Sweeperchart/HC102chart.jpg" alt="HAP 55 Specifications Chart" />
-                </div>
+                </div> -->
+
+                <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 102</td>
+
+            <th>Cleaning Width</th>
+            <td>1050mm</td>
+
+             <th>Productivity</th>
+            <td>6300m2/h</td>
+        </tr>
+
+        <tr>
+            <th>Hopper capacity</th>
+            <td>80 ltrs</td>
+
+            <th>Body Type</th>
+            <td>Plastic</td>
+
+            <th>Main Brush</th>
+            <td>4 m2</td>
+        </tr>
+
+        <tr>
+           
+
+            <th>Main Brush</th>
+            <td>480mm</td>
+
+             
+
+            
+        </tr>
+
+       
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->

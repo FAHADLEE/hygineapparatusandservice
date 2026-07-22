@@ -187,9 +187,81 @@
                     The HAP 5056 is ideally suited for indoor cleaning applications such as railway stations, warehouses, educational institutions, small supermarkets, and other commercial spaces.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/scrubbermachinechart/HC5056chart.jpg" alt="HAP 5056 Specifications Chart" />
-                </div>
+                </div> -->
+
+                <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 5056</td>
+
+            <th>Dirty Water Tank</th>
+            <td>56 ltrs</td>
+
+             <th>Clean Water Tank</th>
+            <td>50 Liters</td>
+        </tr>
+
+        <tr>
+            <th>Brush Motor Power</th>
+            <td>550 Watts</td>
+
+            <th>Voltage</th>
+            <td>220 - 240V</td>
+
+            <th>Vacuum Motor</th>
+            <td>550W</td>
+        </tr>
+
+        <tr>
+            <th>Brush Speed</th>
+            <td>180rpm</td>
+
+            <th>Cleaning Width</th>
+            <td>530mm</td>
+
+            <th>Cable</th>
+            <td>20m</td>
+        </tr>
+
+        <tr>
+            
+
+            <th>Dimension</th>
+            <td>1290*590*1070mm</td>
+
+            <th>Water sucker</th>
+            <td>780mm</td>
+
+            <th>Productivity</th>
+            <td>2100m2/h</td>
+        </tr>
+
+          <tr>
+            
+
+            <th>Brush pressure</th>
+            <td>30kg</td>
+
+            <th>Brush Diameter</th>
+            <td>530mm</td>
+
+            <th>Weight</th>
+            <td>90kg</td>
+        </tr>
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->

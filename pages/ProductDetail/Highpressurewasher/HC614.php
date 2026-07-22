@@ -87,7 +87,7 @@
             <a href="../../../index.php"><i class="ti ti-home"></i></a>
            
             <span class="separator">/</span>
-            <a href="../../Products/Highpressurewasher.phpl">High Pressure Washers</a>
+            <a href="../../Products/Highpressurewasher.php">High Pressure Washers</a>
             <span class="separator">/</span>
             <span class="current">HAP 614</span>
         </div>
@@ -180,9 +180,56 @@
                     Our machines are designed by expert design engineers after long time research, ensuring superior performance, durability, and reliability for all your cleaning needs.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/Highpressurewasherchart/HC614chart.jpg" alt="HC 614 Specifications Chart" />
-                </div>
+                </div> -->
+
+                            <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 614</td>
+
+            <th>RPM</th>
+            <td>2800 rpm</td>
+
+             <th>Pressure</th>
+            <td>160 bar</td>
+        </tr>
+
+        <tr>
+            <th>Motor Power</th>
+            <td>2900 Watts</td>
+
+            <th>Hose Length</th>
+            <td>8 mtrs</td>
+
+            <th>Flow Rate</th>
+            <td>510/hr</td>
+        </tr>
+
+        <tr>
+            <th>Power</th>
+            <td>220v</td>
+
+            <th>weight</th>
+            <td>23kgs</td>
+
+            
+        </tr>
+
+       
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Specifications -->

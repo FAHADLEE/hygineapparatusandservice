@@ -291,25 +291,29 @@
             white-space: nowrap;
         }
 
-        .tabs-nav button::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #00d4ff, #7b2ffc);
-            transition: width 0.3s ease;
-        }
+       
 
-        .tabs-nav button.active {
-            color: #0a1628;
-        }
+       .tabs-nav button.active {
+    color: #0a1628;
+    font-weight: 600;
+}
 
-        .tabs-nav button.active::after {
-            width: 60%;
-        }
+.tabs-nav button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00d4ff, #7b2ffc);
+    transition: width .3s ease;
+}
+
+.tabs-nav button.active::after {
+    width: 80%;
+}
 
         .tabs-nav button:hover {
             color: #0a1628;

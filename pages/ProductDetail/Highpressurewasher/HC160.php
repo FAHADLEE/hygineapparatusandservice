@@ -180,9 +180,56 @@
                     Our machines are designed by expert design engineers after long time research, ensuring superior performance, durability, and reliability for all your cleaning needs.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/Highpressurewasherchart/HC160chart.jpg" alt="HC 160 Specifications Chart" />
-                </div>
+                </div> -->
+
+                <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 160</td>
+
+            <th>RPM</th>
+            <td>2800</td>
+
+             <th>Pressure</th>
+            <td>160 bar</td>
+        </tr>
+
+        <tr>
+            <th>Motor Power</th>
+            <td>2100 Watts</td>
+
+            <th>Hose Length</th>
+            <td>5 mtrs</td>
+
+            <th>Water Delivery</th>
+            <td>1000W</td>
+        </tr>
+
+        <tr>
+            <th>Power</th>
+            <td>220v</td>
+
+            <th>weight</th>
+            <td>40kgs</td>
+
+            
+        </tr>
+
+       
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Specifications -->

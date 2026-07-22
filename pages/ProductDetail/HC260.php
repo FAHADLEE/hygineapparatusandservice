@@ -136,7 +136,7 @@
                         </div>
                     </div>
                     <div class="spec-item">
-                        <i class="ti ti-stainless-steel"></i>
+                        <i class="ti ti-building-factory"></i>
                         <div>
                             <span class="label">Material</span>
                             <span class="value">Stainless Steel</span>
@@ -188,9 +188,68 @@
                     set of accessories for immediate use across multiple applications.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../assets/vaccumcleanerpage/Hc260chart.jpg" alt="HAP 260 Specifications Chart" />
-                </div>
+                </div> -->
+
+                              <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 260</td>
+
+            <th>Type</th>
+            <td>Wet & Dry</td>
+
+             <th>Size</th>
+            <td>60 Liters</td>
+        </tr>
+
+        <tr>
+            <th>Motor Power</th>
+            <td>2000 Watts</td>
+
+            <th>Voltage</th>
+            <td>220 - 240V</td>
+
+            <th>Mode Of Cooling</th>
+            <td>Air Cooling</td>
+        </tr>
+
+        <tr>
+            <th>Air Flow Rate</th>
+            <td>106L/S</td>
+
+            <th>Vacuum Suction</th>
+            <td>250mbar</td>
+
+            <th>Cable</th>
+            <td>8m</td>
+        </tr>
+
+        <tr>
+            
+
+            <th>Dimension</th>
+            <td>630*560*1050mm</td>
+
+            <th>Net Weight</th>
+            <td>26kg</td>
+
+            <th>Motors</th>
+            <td>2 Nos</td>
+        </tr>
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->
@@ -287,7 +346,7 @@
                     <li><i class="ti ti-droplet"></i> Tank Cleaning</li>
                     <li><i class="ti ti-car"></i> Car Interior Cleaning</li>
                     <li><i class="ti ti-building-factory"></i> Industrial Floor Cleaning</li>
-                    <li><i class="ti ti-store"></i> Shop Floor Cleaning</li>
+                    <li><i class="ti ti-briefcase"></i> Shop Floor Cleaning</li>
                     <li><i class="ti ti-building"></i> Warehouse Cleaning</li>
                 </ul>
 

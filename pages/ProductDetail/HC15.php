@@ -92,7 +92,7 @@
             <span class="separator">/</span>
             <a href="../Products/Vaccumecleaners.php">Vacuum Cleaners</a>
             <span class="separator">/</span>
-            <span class="current">HAP 380</span>
+            <span class="current">HAP 15</span>
         </div>
 
         <!-- Product Layout -->
@@ -100,7 +100,7 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-                <img src="../assets/VaccumeCleaner/HC15.png" alt="HAP 380 Wet & Dry Vacuum Cleaner" class="main-image" />
+                <img src="../assets/VaccumeCleaner/HC15.png" alt="HAP 15 Wet & Dry Vacuum Cleaner" class="main-image" />
                 <span class="badge">
                     <i class="ti ti-star"></i> 1000W Motor
                 </span>
@@ -108,10 +108,10 @@
 
             <!-- Info -->
             <div class="product-info">
-                <span class="product-code">Model: HAP 380</span>
-                <h1>HAP 380</h1>
+                <span class="product-code">Model: HAP 15</span>
+                <h1>HAP <span>15</span></h1>
                 <p class="description">
-                    HAP 380 is a wet & dry vacuum cleaner with a stainless steel container capacity of 15 liters, 
+                    HAP 15 is a wet & dry vacuum cleaner with a stainless steel container capacity of 15 liters, 
                     1000-watt powerful motor, and powerful suction.
                 </p>
 
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="spec-item">
-                        <i class="ti ti-stainless-steel"></i>
+                        <i class="ti ti-building-factory"></i>
                         <div>
                             <span class="label">Material</span>
                             <span class="value">Stainless Steel</span>
@@ -180,19 +180,78 @@
             <div class="tab-content active" id="overview">
                 <h3>Product Overview</h3>
                 <p>
-                    The <strong>HAP 380</strong> is a versatile wet and dry vacuum cleaner designed for professional and 
+                    The <strong>HAP 15</strong> is a versatile wet and dry vacuum cleaner designed for professional and 
                     industrial use. With a 15-liter stainless steel container and a powerful 1000-watt motor, 
                     it delivers exceptional suction power for both wet and dry cleaning tasks.
                 </p>
                 <p>
-                    Built with durability in mind, the HAP 380 features a robust stainless steel construction 
+                    Built with durability in mind, the HAP 15 features a robust stainless steel construction 
                     that resists corrosion and ensures long-lasting performance. The machine comes with a complete 
                     set of accessories for immediate use.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../assets/vaccumcleanerpage/HC15chart.jpg" alt="HAP 380 Specifications Chart" />
-                </div>
+                </div> -->
+
+                              <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 15</td>
+
+            <th>Type</th>
+            <td>Wet & Dry</td>
+
+             <th>Size</th>
+            <td>15 Liters</td>
+        </tr>
+
+        <tr>
+            <th>Motor Power</th>
+            <td>1000 Watts</td>
+
+            <th>Voltage</th>
+            <td>220 - 240V</td>
+
+            <th>Mode Of Cooling</th>
+            <td>Air Cooling</td>
+        </tr>
+
+        <tr>
+            <th>Air Flow Rate</th>
+            <td>48L/S</td>
+
+            <th>Vacuum Suction</th>
+            <td>210mbar/220mbar</td>
+
+            <th>Cable</th>
+            <td>7m</td>
+        </tr>
+
+        <tr>
+            
+
+            <th>Dimension</th>
+            <td>410*410*640mm</td>
+
+            <th>Net Weight</th>
+            <td>12.6kg</td>
+
+            <th>Hose Diameter</th>
+            <td>36mm</td>
+        </tr>
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->
@@ -287,8 +346,8 @@
                     <li><i class="ti ti-droplet"></i> Tank Cleaning</li>
                     <li><i class="ti ti-car"></i> Car Interior Cleaning</li>
                     <li><i class="ti ti-building-factory"></i> Industrial Floor Cleaning</li>
-                    <li><i class="ti ti-store"></i> Shop Floor Cleaning</li>
-                    <li><i class="ti ti-carpet"></i> Carpet Cleaning</li>
+                    <li><i class="ti ti-briefcase"></i> Shop Floor Cleaning</li>
+                    <li><i class="ti ti-brush"></i>Carpet Cleaning</li>
                 </ul>
 
                 <div style="margin-top: 24px; background: #f0f7ff; padding: 20px; border-radius: 16px; border-left: 4px solid #00d4ff;">

@@ -181,9 +181,81 @@
                     This ride-on scrubber drier is perfect for large area cleaning applications, providing superior cleaning performance with minimal operator fatigue. The machine is designed for efficiency, productivity, and ease of use.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/scrubbermachinechart/HC6530chart.jpg" alt="HAP 6530 Specifications Chart" />
-                </div>
+                </div> -->
+
+                <div class="overview-specs">
+
+    <h4 class="overview-title">
+        
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 6530</td>
+
+            <th>Recovery Tank</th>
+            <td>75 ltrs</td>
+
+             <th>Solution Tank</th>
+            <td>65 Liters</td>
+        </tr>
+
+        <tr>
+            <th>Brush Size</th>
+            <td>20</td>
+
+            <th>Suction width</th>
+            <td>830mm</td>
+
+            <th>Suction Motor</th>
+            <td>310W</td>
+        </tr>
+
+        <tr>
+            <th>Brush Motor</th>
+            <td>350W</td>
+
+            <th>Driving Motor</th>
+            <td>300w</td>
+
+            <th>Brush Pressure</th>
+            <td>25kg</td>
+        </tr>
+
+        <tr>
+            
+
+            <th>Max Gradient</th>
+            <td>10 deg</td>
+
+            <th>Productivity</th>
+            <td>3000m2/h</td>
+
+            <th>Brush RPM</th>
+            <td>170rpm</td>
+
+           
+        </tr>
+
+          <tr>
+            
+
+            <th>Noise Level</th>
+            <td>68dba</td>
+
+            <th>Battery</th>
+            <td>2*12v*11AH</td>
+
+        </tr>
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Specifications -->

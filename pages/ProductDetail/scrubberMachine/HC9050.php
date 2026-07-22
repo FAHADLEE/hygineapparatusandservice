@@ -183,9 +183,81 @@
                     This ride-on scrubber drier is perfect for large commercial and industrial spaces, offering superior cleaning performance with minimal effort. The machine is designed for maximum efficiency and comfort, allowing operators to cover large areas quickly and effectively.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/scrubbermachinechart/HC9050chart.jpg" alt="HAP 9050 Specifications Chart" />
-                </div>
+                </div> -->
+
+                             <div class="overview-specs">
+
+    <h4 class="overview-title">
+        <i class="ti ti-list-details"></i>
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 9050</td>
+
+            <th>Recovery Tank</th>
+            <td>100 ltrs</td>
+
+             <th>Solution Tank</th>
+            <td>90 Liters</td>
+        </tr>
+
+        <tr>
+            <th>Brush Size</th>
+            <td>20</td>
+
+            <th>Suction width</th>
+            <td>980mm</td>
+
+            <th>Suction Motor</th>
+            <td>550W</td>
+        </tr>
+
+        <tr>
+            <th>Brush Motor</th>
+            <td>350W</td>
+
+            <th>Driving Motor</th>
+            <td>500w</td>
+
+            <th>Brush Pressure</th>
+            <td>30kg</td>
+        </tr>
+
+        <tr>
+            
+
+            <th>Max Gradient</th>
+            <td>10 deg</td>
+
+            <th>Productivity</th>
+            <td>4050m2/h</td>
+
+            <th>Brush RPM</th>
+            <td>180rpm</td>
+
+           
+        </tr>
+
+          <tr>
+            
+
+            <th>Noise Level</th>
+            <td>68dba</td>
+
+            <th>Battery</th>
+            <td>2*12v*150AH</td>
+
+        </tr>
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Specifications -->

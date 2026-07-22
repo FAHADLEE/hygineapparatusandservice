@@ -183,9 +183,59 @@
                     The HAP 700 offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing. Built with durability and performance in mind, this machine is perfect for professional and industrial use.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/Scrubberchart/Hc700chart.jpg" alt="HC 700 Specifications Chart" />
-                </div>
+                </div> -->
+
+<div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 700</td>
+
+            <th>Water Tank</th>
+            <td>10 ltrs</td>
+
+             <th>Speed</th>
+            <td>154 rpm</td>
+        </tr>
+
+        <tr>
+            <th>Brush Motor Power</th>
+            <td>750w</td>
+
+            <th>Voltage</th>
+            <td>220-240V</td>
+
+            <th>Weight</th>
+            <td>25.7Kg</td>
+        </tr>
+
+        <tr>
+            <th>Dimension</th>
+            <td>375*126*1133mm</td>
+
+            <th>Cable</th>
+            <td>12 mtrs</td>
+
+             <th>Brush Size</th>
+            <td>13</td>
+
+            
+        </tr>
+
+       
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->

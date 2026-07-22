@@ -726,7 +726,7 @@
     .about-image-wrapper {
       position: relative;
       width: 340px;
-      height: 340px;
+      height: 450px;
       margin: 0 auto;
     }
     .about-image-wrapper::before {
@@ -1719,3 +1719,108 @@
         transform:scale(1.08);
     }
 }
+
+
+/*css for table in overview*/
+
+.overview-specs {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    background: #fff;
+}
+
+.overview-title {
+    margin: 0;
+    padding: 13px;
+  background: var(--gradient);
+    color:white;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.overview-spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Key cells */
+.overview-spec-table th {
+    width: 16.66%;
+    background: #eef6f7;
+    color: #222;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px;
+    text-align: center;
+    border: 1px solid #d8e4e7;
+}
+
+/* Value cells */
+.overview-spec-table td {
+    width: 16.66%;
+    background: #fff;
+    color: #555;
+    font-size: 15px;
+    padding: 13px;
+    text-align: center;
+    border: 1px solid #d8e4e7;
+}
+
+
+.overview-spec-table tr:hover th,
+.overview-spec-table tr:hover td {
+    background: #f1fbfd;
+    transition: .3s;
+}
+
+@media (max-width:768px){
+
+    .overview-spec-table,
+    .overview-spec-table tbody,
+    .overview-spec-table tr,
+    .overview-spec-table th,
+    .overview-spec-table td{
+        display:block;
+        width:100%;
+    }
+
+    .overview-spec-table{
+        border:none;
+        background:transparent;
+    }
+
+    .overview-spec-table tr{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:0;
+        background:#fff;
+        /* margin-bottom:20px; */
+        /* border-radius:12px; */
+        overflow:hidden;
+        box-shadow:0 4px 15px rgba(0,0,0,.08);
+    }
+
+    .overview-spec-table th{
+        background:#e8f1f8;
+        color:#0b4063;
+        font-size:14px;
+        font-weight:600;
+        padding:14px;
+        border:1px solid #d7ecef;
+    }
+
+    .overview-spec-table td{
+        background:#fff;
+        color:#444;
+        font-size:14px;
+        padding:14px;
+        border:1px solid #d7ecef;
+    }
+}
+

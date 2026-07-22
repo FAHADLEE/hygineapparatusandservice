@@ -187,9 +187,81 @@
                     With its adjustable handle, the machine can be used at your convenient height, reducing operator fatigue and improving productivity.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/scrubbermachinechart/HC4045chart.jpg" alt="HAP 4045 Specifications Chart" />
-                </div>
+                </div> -->
+
+                <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 4045</td>
+
+            <th>Dirty Water Tank</th>
+            <td>50 ltrs</td>
+
+             <th>Clean Water Tank</th>
+            <td>40 Liters</td>
+        </tr>
+
+        <tr>
+            <th>Brush Motor Power</th>
+            <td>550 Watts</td>
+
+            <th>Voltage</th>
+            <td>24V</td>
+
+            <th>Vacuum Motor</th>
+            <td>500W</td>
+        </tr>
+
+        <tr>
+            <th>Brush Speed</th>
+            <td>160rpm</td>
+
+            <th>Cleaning Width</th>
+            <td>510mm</td>
+
+            <th>Battery</th>
+            <td>2*12V*100AH</td>
+        </tr>
+
+        <tr>
+            
+
+            <th>Dimension</th>
+            <td>1250*630*950mm</td>
+
+            <th>Water sucker</th>
+            <td>755mm</td>
+
+            <th>Productivity</th>
+            <td>1750m2/h</td>
+        </tr>
+
+          <tr>
+            
+
+            <th>Brush pressure</th>
+            <td>30kg</td>
+
+            <th>Brush Diameter</th>
+            <td>510mm</td>
+
+            <th>Weight</th>
+            <td>148kg</td>
+        </tr>
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->

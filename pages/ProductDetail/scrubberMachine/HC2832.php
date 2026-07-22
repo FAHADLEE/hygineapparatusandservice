@@ -187,9 +187,81 @@
                     With its adjustable handle, you can use the machine at your convenient height, ensuring comfortable operation for extended periods.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/scrubbermachinechart/HC2832chart.jpg" alt="HAP 2832 Specifications Chart" />
-                </div>
+                </div> -->
+
+ <div class="overview-specs">
+
+    <h4 class="overview-title">
+        
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 2832</td>
+
+            <th>Dirty Water Tank</th>
+            <td>32 ltrs</td>
+
+             <th>Clean Water Tank</th>
+            <td>28 Liters</td>
+        </tr>
+
+        <tr>
+            <th>Brush Motor Power</th>
+            <td>750 Watts</td>
+
+            <th>Voltage</th>
+            <td>220 - 240V</td>
+
+            <th>Vacuum Motor</th>
+            <td>1000W</td>
+        </tr>
+
+        <tr>
+            <th>Brush Speed</th>
+            <td>148rpm</td>
+
+            <th>Cleaning Width</th>
+            <td>455mm</td>
+
+            <th>Cable</th>
+            <td>18m</td>
+        </tr>
+
+        <tr>
+            
+
+            <th>Dimension</th>
+            <td>965*615*1020mm</td>
+
+            <th>Water sucker</th>
+            <td>755mm</td>
+
+            <th>Productivity</th>
+            <td>166m2/h</td>
+        </tr>
+
+          <tr>
+            
+
+            <th>Brush pressure</th>
+            <td>30kg</td>
+
+            <th>Brush Diameter</th>
+            <td>455mm</td>
+
+            <th>Weight</th>
+            <td>77kg</td>
+        </tr>
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->

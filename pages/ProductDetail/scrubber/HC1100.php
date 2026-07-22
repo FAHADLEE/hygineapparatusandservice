@@ -185,9 +185,59 @@
                     The HAP 1100 offers multipurpose floor applications for all types of hard floors including scrubbing, buffing, polishing, and dry foam carpet shampooing. Built with industrial-grade durability, this machine delivers exceptional performance for professional and industrial use.
                 </p>
 
-                <div class="chart-container">
+                <!-- <div class="chart-container">
                     <img src="../../assets/Scrubberchart/HC1100chart.jpg" alt="HC 1100 Specifications Chart" />
-                </div>
+                </div> -->
+
+                <div class="overview-specs">
+
+    <h4 class="overview-title">
+       
+        Product Specifications
+    </h4>
+
+    <table class="overview-spec-table">
+        <tr>
+            <th>Model</th>
+            <td>HAP 1100</td>
+
+            <th>Water Tank</th>
+            <td>10 ltrs</td>
+
+             <th>Speed</th>
+            <td>154 rpm</td>
+        </tr>
+
+        <tr>
+            <th>Brush Motor Power</th>
+            <td>1100w</td>
+
+            <th>Voltage</th>
+            <td>220-240V</td>
+
+            <th>Weight</th>
+            <td>48Kg</td>
+        </tr>
+
+        <tr>
+            <th>Dimension</th>
+            <td>560*450*355mm</td>
+
+            <th>Cable</th>
+            <td>12 mtrs</td>
+
+             <th>Brush Size</th>
+            <td>17</td>
+
+            
+        </tr>
+
+       
+
+       
+    </table>
+
+</div>
             </div>
 
             <!-- Tab: Advantages -->
