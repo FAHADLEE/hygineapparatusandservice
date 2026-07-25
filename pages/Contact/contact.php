@@ -223,12 +223,15 @@
 
       <!-- Map Section -->
       <div class="map-section">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.234567890123!2d80.12345678901234!3d13.012345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzQ0LjQiTiA4MMKwMDcnMjYuNSJF!5e0!3m2!1sen!2sin!4v1234567890123" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe
+    src="https://maps.google.com/maps?q=13.026914596557617,80.13716888427734&z=17&output=embed"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
       </div>
 
     </div>
@@ -261,6 +264,24 @@
     </div>
 </div>
 <div id="snackbar"></div>
+
+<div class="floating-contact">
+
+  <a href="https://wa.me/918667795012" class="contact-option whatsapp" target="_blank">
+    <i class="ti ti-brand-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+
+  <a href="tel:+918667795012" class="contact-option call">
+    <i class="ti ti-phone-call"></i>
+    <span>Call</span>
+  </a>
+
+  <button id="floatingBtn" class="floating-btn">
+    <i class="ti ti-message-circle" id="floatingIcon"></i>
+  </button>
+
+</div>
   <script>
    
     document.querySelectorAll('.info-card').forEach(card => {
@@ -523,6 +544,60 @@ window.addEventListener("pageshow", function (event) {
                 window.location.href = href;
             }, 500);
 
+});
+
+const floatingContact = document.querySelector(".floating-contact");
+const floatingBtn = document.getElementById("floatingBtn");
+const floatingIcon = document.getElementById("floatingIcon");
+
+const STORAGE_KEY = "floatingContactOpen";
+const SCROLL_KEY = "floatingContactScrollY";
+
+// Toggle handler
+floatingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleFloating();
+});
+
+function toggleFloating() {
+    floatingContact.classList.toggle("active");
+    const isActive = floatingContact.classList.contains("active");
+
+    floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
+
+    // Persist state
+    sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
+}
+
+// Save scroll position whenever the user taps call/whatsapp (they're about to leave)
+document.querySelectorAll(".contact-option").forEach(link => {
+    link.addEventListener("click", () => {
+        sessionStorage.setItem(SCROLL_KEY, window.scrollY);
+    });
+});
+
+// Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
+window.addEventListener("DOMContentLoaded", () => {
+    const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+    if (wasActive) {
+        floatingContact.classList.add("active");
+        floatingIcon.className = "ti ti-x";
+    }
+
+    const savedScroll = sessionStorage.getItem(SCROLL_KEY);
+    if (savedScroll) {
+        window.scrollTo(0, parseInt(savedScroll, 10));
+        sessionStorage.removeItem(SCROLL_KEY); // one-time restore
+    }
+});
+
+// Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+        floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
+        floatingContact.classList.toggle("active", wasActive);
+    }
 });
 </script>
 

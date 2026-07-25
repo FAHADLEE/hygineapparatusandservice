@@ -610,7 +610,7 @@
                 <span class="gradient-text">Cleaning Technology</span>
             </h1>
             <p>
-                Hygiene Apparatus and service is a leading supplier of professional,
+                <b>Hygiene Apparatus and service</b> is a leading supplier of professional,
                 industrial and domestic cleaning solutions with 24×7 sales and
                 service support across Tamil Nadu.
             </p>
@@ -656,17 +656,17 @@
             <span class="section-tag">Who We Are</span>
             <h2>Redefining <span class="gradient-text">Clean</span></h2>
             <p>
-                Hygiene Apparatus and Service is headquartered in Coimbatore,
+                Hygiene Apparatus and Service is headquartered in Chennai,
                 Tamil Nadu and specializes in advanced cleaning technology.
             </p>
             <p>
                 We supply industrial cleaning machines, housekeeping tools,
                 hygiene products and provide professional maintenance services.
             </p>
-            <p>
-                Our dedicated engineers serve clients across Coimbatore,
+            <!-- <p>
+                Our dedicated engineers serve clients across Chennai,
                 Tirupur, Nilgiris, Erode, Karur and Salem.
-            </p>
+            </p> -->
             <div class="about-features">
                 <div class="feature-item">
                     <i class="ti ti-certificate"></i>
@@ -929,6 +929,23 @@
 
 </div>
 <div id="snackbar"></div>
+<div class="floating-contact">
+
+  <a href="https://wa.me/918667795012" class="contact-option whatsapp" target="_blank">
+    <i class="ti ti-brand-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+
+  <a href="tel:+918667795012" class="contact-option call" target="_blank">
+    <i class="ti ti-phone-call"></i>
+    <span>Call</span>
+  </a>
+
+  <button id="floatingBtn" class="floating-btn">
+    <i class="ti ti-message-circle" id="floatingIcon"></i>
+  </button>
+
+</div>
 
 
 <script>
@@ -1180,6 +1197,60 @@ window.addEventListener("pageshow", function (event) {
                 window.location.href = href;
             }, 500);
 
+});
+
+const floatingContact = document.querySelector(".floating-contact");
+const floatingBtn = document.getElementById("floatingBtn");
+const floatingIcon = document.getElementById("floatingIcon");
+
+const STORAGE_KEY = "floatingContactOpen";
+const SCROLL_KEY = "floatingContactScrollY";
+
+// Toggle handler
+floatingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleFloating();
+});
+
+function toggleFloating() {
+    floatingContact.classList.toggle("active");
+    const isActive = floatingContact.classList.contains("active");
+
+    floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
+
+    // Persist state
+    sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
+}
+
+// Save scroll position whenever the user taps call/whatsapp (they're about to leave)
+document.querySelectorAll(".contact-option").forEach(link => {
+    link.addEventListener("click", () => {
+        sessionStorage.setItem(SCROLL_KEY, window.scrollY);
+    });
+});
+
+// Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
+window.addEventListener("DOMContentLoaded", () => {
+    const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+    if (wasActive) {
+        floatingContact.classList.add("active");
+        floatingIcon.className = "ti ti-x";
+    }
+
+    const savedScroll = sessionStorage.getItem(SCROLL_KEY);
+    if (savedScroll) {
+        window.scrollTo(0, parseInt(savedScroll, 10));
+        sessionStorage.removeItem(SCROLL_KEY); // one-time restore
+    }
+});
+
+// Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+        floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
+        floatingContact.classList.toggle("active", wasActive);
+    }
 });
 
 

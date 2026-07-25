@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="./pages/Contact/contact.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.js"></script>
 </head>
 <body>
@@ -92,28 +97,25 @@
   <div class="scroll-container" id="scrollContainer">
 
     <!-- ===== HOME SECTION ===== -->
-    <section class="section" id="home">
-      <div class="home-bg"></div>
-      <div class="home-content">
+<section class="section" id="home">
+    <div class="home-bg"></div>
+
+    <div class="home-content">
+
+        <!-- LEFT SIDE -->
         <div class="home-visual">
-          <!-- Floating Particles -->
-          <div class="particle"></div>
+
+         <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
 
-          <!-- Automation Hub -->
-          <div class="automation-hub">
-            <!-- Glowing Rings -->
+         
+            <!-- <div class="glow-ring"></div>
             <div class="glow-ring"></div>
-            <div class="glow-ring"></div>
-            <div class="glow-ring"></div>
+            <div class="glow-ring"></div> -->
 
-            <!-- Center Icon -->
-            <div class="center-icon">
-              <i class="ti ti-robot"></i>
-            </div>
 
             <!-- Orbiting Elements -->
             <div class="orbit-element orbit-element-1">
@@ -129,67 +131,154 @@
              
               <span>Automated</span>
             </div>
-          </div>
+          
 
-        
-        </div>
+            <div class="swiper productSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="product-card-home">
+                            <img src="./pages/assets/Products/Vacuum Cleaners.png">
+                             <!-- <h6>Vacuum Cleaners</h6> -->
+                        </div>
+                         <h6>Vacuum Cleaners</h6>
+                       
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card-home">
+                            <img src="./pages/assets/Products/scrubber.png">
+                            
+                        </div>
+                        <h6>Scrubber</h6>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card-home">
+                            <img src="./pages/assets/Products/High Pressure Washer.png">
+                           
+                        </div>
+                         <h6>High Pressure Washers</h6>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card-home">
+                            <img src="./pages/assets/Products/Sweeper Machine.png">
+                            
+                        </div>
+                        <h6>Sweeper Machine</h6>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card-home">
+                            <img src="./pages/assets/Products/Hygiene Products.png">
+                            
+                        </div>
+                        <h6>Hygiene Products</h6>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card-home">
+                            <img src="./pages/assets/Products/Dustbin.png">
+                            
+                        </div>
+                        <h6>Dustbin</h6>
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+
+      
+
+        <!-- RIGHT SIDE -->
         <div class="home-text">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            <span>Next-Gen Cleaning Solutions</span>
-          </div>
-          <h1 class="hero-title">
-            <span class="highlight">Where Hygiene</span>
-            <span>Meets Innovation</span>
-          </h1>
-          <p class="hero-desc">Advanced cleaning technology for modern spaces — from industrial to domestic, we deliver excellence.</p>
-          <div class="hero-buttons">
-            <a href="#products" class="btn-primary">
-              Explore Products
-              <i class="ti ti-arrow-right"></i>
-            </a>
-            <a href="#about" class="btn-secondary">
-              <i class="ti ti-info-circle"></i>
-              Learn More
-            </a>
-          </div>
+
+        <!-- <img src="./pages/assets/ChatGPT_Image_Jul_22__2026__04_13_50_PM-removebg-preview.png" class="hero-watermark" alt=""> -->
+
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Smart Cleaning. Better Living.</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="highlight">Experience the Power</span>
+                <span>of Perfect Cleanliness</span>
+            </h1>
+
+            <p class="hero-desc">
+                From industrial floor scrubbers and high-pressure washers to premium vacuum cleaners and hygiene products, discover innovative solutions that deliver exceptional cleanliness, efficiency, and lasting performance.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn-primary">
+                    Explore Products
+                </a>
+
+                <a href="#about" class="btn-secondary">
+                    Learn More
+                </a>
+
+            </div>
+
         </div>
-       
-      </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- ===== ABOUT SECTION ===== -->
-    <section class="section" id="about">
-      <div class="section-wrapper">
-        <div class="about-grid">
-          <div class="about-image">
-            <div class="about-image-wrapper">
-              <img src="./pages/assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" alt="About" />
-            </div>
+  <section class="section" id="about">
+  <div class="section-wrapper">
+    <div class="about-grid">
+      <div class="about-image">
+        <div class="about-image-wrapper">
+          <img src="./pages/assets/IMG_3730,JPG-Picsart-BackgroundRemover.png" alt="About" />
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag">About Us</span>
+
+        <h2>Redefining <span class="gradient-text">Clean</span></h2>
+
+        <p>
+          <strong>Hygiene Apparatus & Service</strong> is a trusted cleaning solutions
+          company headquartered in <strong>Chennai, Tamil Nadu</strong>, delivering
+          innovative cleaning equipment and hygiene solutions for industrial,
+          commercial, and residential environments.
+        </p>
+
+        <p>
+          We specialize in premium vacuum cleaners, floor scrubbers, sweepers,
+          high-pressure washers, hygiene products, and cleaning accessories from
+          leading brands. Backed by expert guidance, dependable after-sales
+          service, and a commitment to quality, we help businesses and homes
+          maintain cleaner, healthier, and more productive spaces.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="number">10+</div>
+            <div class="label">Years Experience</div>
           </div>
-          <div class="about-text">
-            <span class="section-tag">About Us</span>
-            <h2>Redefining <span class="gradient-text">Clean</span></h2>
-            <p>Hygiene Apparatus & Service is a premier Indian firm headquartered in Coimbatore, Tamil Nadu, revolutionizing the cleaning technology industry.</p>
-            <p>We provide professional, industrial, and domestic cleaning machines, chemicals, tools, and trolleys with 24/7 sales and service support. Our reputation is built on superior quality and unwavering commitment.</p>
-            <div class="about-stats">
-              <div class="stat-item">
-                <div class="number">10+</div>
-                <div class="label">Years Experience</div>
-              </div>
-              <div class="stat-item">
-                <div class="number">500+</div>
-                <div class="label">Happy Clients</div>
-              </div>
-              <div class="stat-item">
-                <div class="number">24/7</div>
-                <div class="label">Support</div>
-              </div>
-            </div>
+
+          <div class="stat-item">
+            <div class="number">6K+</div>
+            <div class="label">Happy Clients</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="number">24/7</div>
+            <div class="label">Support</div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- ===== PRODUCTS SECTION ===== -->
     <section class="section" id="products">
@@ -319,12 +408,15 @@
 
       <!-- Map Section -->
       <div class="map-section">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.234567890123!2d80.12345678901234!3d13.012345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzQ0LjQiTiA4MMKwMDcnMjYuNSJF!5e0!3m2!1sen!2sin!4v1234567890123" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+       <iframe
+    src="https://maps.google.com/maps?q=13.026914596557617,80.13716888427734&z=17&output=embed"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
       </div>
 
     </div>
@@ -383,7 +475,23 @@
 </div>
 </div>
 <div id="snackbar"></div>
+<div class="floating-contact">
 
+  <a href="https://wa.me/918667795012" class="contact-option whatsapp" target="_blank">
+    <i class="ti ti-brand-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+
+  <a href="tel:+918667795012" class="contact-option call" target="_blank">
+    <i class="ti ti-phone-call"></i>
+    <span>Call</span>
+  </a>
+
+  <button id="floatingBtn" class="floating-btn"  type="button">
+    <i class="ti ti-message-circle" id="floatingIcon"></i>
+  </button>
+
+</div>
  
 
   </div>
@@ -800,6 +908,97 @@ window.addEventListener("pageshow", function (event) {
     if (event.persisted) {
         loader.classList.remove("show");
     }
+
+});
+
+const floatingContact = document.querySelector(".floating-contact");
+const floatingBtn = document.getElementById("floatingBtn");
+const floatingIcon = document.getElementById("floatingIcon");
+
+const STORAGE_KEY = "floatingContactOpen";
+const SCROLL_KEY = "floatingContactScrollY";
+
+// Toggle handler
+floatingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleFloating();
+});
+
+function toggleFloating() {
+    floatingContact.classList.toggle("active");
+    const isActive = floatingContact.classList.contains("active");
+
+    floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
+
+    // Persist state
+    sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
+}
+
+// Save scroll position whenever the user taps call/whatsapp (they're about to leave)
+document.querySelectorAll(".contact-option").forEach(link => {
+    link.addEventListener("click", () => {
+        sessionStorage.setItem(SCROLL_KEY, window.scrollY);
+    });
+});
+
+// Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
+window.addEventListener("DOMContentLoaded", () => {
+    const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+    if (wasActive) {
+        floatingContact.classList.add("active");
+        floatingIcon.className = "ti ti-x";
+    }
+
+    const savedScroll = sessionStorage.getItem(SCROLL_KEY);
+    if (savedScroll) {
+        window.scrollTo(0, parseInt(savedScroll, 10));
+        sessionStorage.removeItem(SCROLL_KEY); // one-time restore
+    }
+});
+
+// Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+        floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
+        floatingContact.classList.toggle("active", wasActive);
+    }
+});
+
+new Swiper(".productSwiper",{
+
+effect:"coverflow",
+
+grabCursor:true,
+
+centeredSlides:true,
+
+slidesPerView:"auto",
+
+loop:true,
+
+speed:500,
+
+autoplay:{
+delay:1500,
+disableOnInteraction:false
+},
+
+coverflowEffect:{
+
+rotate:25,
+
+stretch:0,
+
+depth:180,
+
+modifier:1,
+
+slideShadows:false,
+
+scale:.85
+
+}
 
 });
 </script>
