@@ -45,485 +45,485 @@
         rel="stylesheet" />
 
     <style>
-    body {
-        overflow: visible !important;
-        height: auto !important;
-    }
-
-    .service-page {
-        padding-top: 70px;
-        min-height: 100vh;
-        background: #f8f9fa;
-    }
-
-    /* Hero Section */
-    .service-hero {
-        background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 50%, #0a1628 100%);
-        padding: 80px 40px 60px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        scrollbar-width: none;
-
-
-        -ms-overflow-style: none;
-    }
-
-    .service-hero::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        right: -20%;
-        width: 600px;
-        height: 600px;
-        background: radial-gradient(circle, rgba(0, 212, 255, 0.08), transparent 70%);
-        border-radius: 50%;
-    }
-
-    .service-hero::after {
-        content: '';
-        position: absolute;
-        bottom: -30%;
-        left: -10%;
-        width: 400px;
-        height: 400px;
-        background: radial-gradient(circle, rgba(123, 47, 252, 0.06), transparent 70%);
-        border-radius: 50%;
-    }
-
-    .service-hero-content {
-        position: relative;
-        z-index: 1;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .service-hero .badge {
-        display: inline-block;
-        background: rgba(0, 212, 255, 0.15);
-        color: #00d4ff;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 8px 20px;
-        border-radius: 20px;
-        border: 1px solid rgba(0, 212, 255, 0.15);
-        margin-bottom: 20px;
-    }
-
-    .service-hero h1 {
-        font-size: clamp(36px, 5vw, 56px);
-        font-weight: 800;
-        color: white;
-        margin-bottom: 16px;
-        line-height: 1.1;
-    }
-
-    .service-hero h1 span {
-        background: linear-gradient(135deg, #00d4ff, #7b2ffc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .service-hero p {
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 18px;
-        line-height: 1.8;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    /* Container */
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 60px 40px;
-    }
-
-    /* Section Header */
-    .section-header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .section-tag {
-        display: inline-block;
-        width: fit-content;
-        font-size: 32px;
-        font-weight: 900;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        color: #86898e;
-        position: relative;
-        padding-bottom: 12px;
-    }
-
-    .section-tag::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 4px;
-        background: linear-gradient(90deg, #80848c, var(--accent));
-        border-radius: 10px;
-    }
-
-    .section-header h2 {
-        font-size: clamp(28px, 3.5vw, 40px);
-        font-weight: 700;
-        color: #0a1628;
-    }
-
-    .section-header h2 span {
-        background: linear-gradient(135deg, #00d4ff, #7b2ffc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .section-header p {
-        color: rgba(0, 0, 0, 0.6);
-        font-size: 16px;
-        max-width: 600px;
-        margin: 12px auto 0;
-    }
-
-    /* Service Grid */
-    .service-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-        gap: 30px;
-    }
-
-    /* Service Card */
-    .service-card {
-        background: white;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        border: 1px solid rgba(0, 0, 0, 0.04);
-        position: relative;
-        cursor: pointer;
-    }
-
-    .service-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, #00d4ff, #7b2ffc);
-        transform: scaleX(0);
-        transition: transform 0.4s ease;
-        transform-origin: left;
-    }
-
-    .service-card:hover::before {
-        transform: scaleX(1);
-    }
-
-    .service-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        border-color: rgba(0, 212, 255, 0.1);
-    }
-
-    .service-card-image {
-        position: relative;
-        overflow: hidden;
-        height: 220px;
-        background: #f0f4f8;
-    }
-
-    .service-card-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.6s ease;
-    }
-
-    .service-card:hover .service-card-image img {
-        transform: scale(1.08);
-    }
-
-    .overlay-icon {
-        position: absolute;
-        /* bottom: -20px; */
-        top: 205px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
-        background: linear-gradient(135deg, #00d4ff, #7b2ffc);
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 8px 24px rgba(0, 212, 255, 0.3);
-        transition: all 0.3s ease;
-    }
-
-    .overlay-icon {
-        transform: rotate(10deg) scale(1.1);
-    }
-
-    .overlay-icon i {
-        font-size: 28px;
-        color: white;
-    }
-
-    .service-card-content {
-        padding: 28px 30px 30px;
-    }
-
-    .service-card-content .service-number {
-        font-size: 12px;
-        font-weight: 700;
-        color: rgba(0, 212, 255, 0.3);
-        letter-spacing: 2px;
-        margin-bottom: 8px;
-        display: block;
-    }
-
-    .service-card-content h3 {
-        font-size: 20px;
-        font-weight: 700;
-        color: #0a1628;
-        margin-bottom: 12px;
-        transition: color 0.3s ease;
-    }
-
-    .service-card:hover .service-card-content h3 {
-        color: #00d4ff;
-    }
-
-    .service-card-content p {
-        color: rgba(0, 0, 0, 0.6);
-        font-size: 15px;
-        line-height: 1.8;
-        margin-bottom: 20px;
-    }
-
-    .service-card-content .service-features {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 20px;
-    }
-
-    .service-card-content .service-features span {
-        background: rgba(0, 212, 255, 0.06);
-        color: #0a1628;
-        font-size: 12px;
-        font-weight: 500;
-        padding: 4px 14px;
-        border-radius: 20px;
-        border: 1px solid rgba(0, 212, 255, 0.08);
-    }
-
-    .service-card-content .btn-learn {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: #0a1628;
-        font-weight: 600;
-        font-size: 14px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        padding: 8px 0;
-        border-bottom: 2px solid transparent;
-    }
-
-    .service-card-content .btn-learn i {
-        transition: transform 0.3s ease;
-    }
-
-    .service-card-content .btn-learn:hover {
-        color: #00d4ff;
-        border-bottom-color: #00d4ff;
-    }
-
-    .service-card-content .btn-learn:hover i {
-        transform: translateX(6px);
-    }
-
-    /* CTA Section */
-    .service-cta {
-        background: linear-gradient(135deg, #0a1628, #1a2a4a);
-        border-radius: 24px;
-        padding: 60px 50px;
-        margin-top: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 30px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .service-cta::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        right: -10%;
-        width: 400px;
-        height: 400px;
-        background: radial-gradient(circle, rgba(0, 212, 255, 0.05), transparent 70%);
-        border-radius: 50%;
-    }
-
-    .service-cta-content {
-        position: relative;
-        z-index: 1;
-    }
-
-    .service-cta-content h3 {
-        color: white;
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 8px;
-    }
-
-    .service-cta-content p {
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 16px;
-    }
-
-    .service-cta .btn-primary {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        background: linear-gradient(135deg, #00d4ff, #7b2ffc);
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 16px;
-        padding: 16px 36px;
-        border-radius: 12px;
-        transition: all 0.3s ease;
-        position: relative;
-        z-index: 1;
-        white-space: nowrap;
-    }
-
-    .service-cta .btn-primary:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 40px rgba(0, 212, 255, 0.3);
-    }
-
-    /* Responsive */
-    @media (max-width: 992px) {
-        .service-grid {
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        body {
+            overflow: visible !important;
+            height: auto !important;
         }
-    }
 
-    @media (max-width: 768px) {
+        .service-page {
+            padding-top: 70px;
+            min-height: 100vh;
+            background: #f8f9fa;
+        }
+
+        /* Hero Section */
         .service-hero {
-            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 50%, #0a1628 100%);
+            padding: 80px 40px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            scrollbar-width: none;
+
+
+            -ms-overflow-style: none;
+        }
+
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.08), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .service-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(123, 47, 252, 0.06), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .service-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-hero .badge {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.15);
+            margin-bottom: 20px;
         }
 
         .service-hero h1 {
-            font-size: 28px;
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .service-hero h1 span {
+            background: linear-gradient(135deg, #00d4ff, #7b2ffc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .service-hero p {
-            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
+        /* Container */
         .container {
-            padding: 40px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 40px;
         }
 
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            width: fit-content;
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #86898e;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .section-tag::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #80848c, var(--accent));
+            border-radius: 10px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 700;
+            color: #0a1628;
+        }
+
+        .section-header h2 span {
+            background: linear-gradient(135deg, #00d4ff, #7b2ffc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 12px auto 0;
+        }
+
+        /* Service Grid */
         .service-grid {
-            grid-template-columns: 1fr;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        /* Service Card */
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00d4ff, #7b2ffc);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+            transform-origin: left;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border-color: rgba(0, 212, 255, 0.1);
         }
 
         .service-card-image {
-            height: 180px;
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+            background: #f0f4f8;
+        }
+
+        .service-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .service-card:hover .service-card-image img {
+            transform: scale(1.08);
+        }
+
+        .overlay-icon {
+            position: absolute;
+            /* bottom: -20px; */
+            top: 205px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00d4ff, #7b2ffc);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(0, 212, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .overlay-icon {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .overlay-icon i {
+            font-size: 28px;
+            color: white;
         }
 
         .service-card-content {
-            padding: 20px;
+            padding: 28px 30px 30px;
+        }
+
+        .service-card-content .service-number {
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(0, 212, 255, 0.3);
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            display: block;
         }
 
         .service-card-content h3 {
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #0a1628;
+            margin-bottom: 12px;
+            transition: color 0.3s ease;
         }
 
-        .service-cta {
-            padding: 40px 24px;
-            flex-direction: column;
-            text-align: center;
+        .service-card:hover .service-card-content h3 {
+            color: #00d4ff;
         }
 
-        .service-cta-content h3 {
-            font-size: 22px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .service-hero h1 {
-            font-size: 24px;
+        .service-card-content p {
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
 
-        .service-card-image {
-            height: 160px;
+        .service-card-content .service-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
         }
 
         .service-card-content .service-features span {
-            font-size: 11px;
-            padding: 3px 10px;
+            background: rgba(0, 212, 255, 0.06);
+            color: #0a1628;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.08);
         }
-    }
 
-    /* Animation */
-    @keyframes fadeInUp {
-        from {
+        .service-card-content .btn-learn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #0a1628;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .service-card-content .btn-learn i {
+            transition: transform 0.3s ease;
+        }
+
+        .service-card-content .btn-learn:hover {
+            color: #00d4ff;
+            border-bottom-color: #00d4ff;
+        }
+
+        .service-card-content .btn-learn:hover i {
+            transform: translateX(6px);
+        }
+
+        /* CTA Section */
+        .service-cta {
+            background: linear-gradient(135deg, #0a1628, #1a2a4a);
+            border-radius: 24px;
+            padding: 60px 50px;
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.05), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .service-cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-cta-content h3 {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .service-cta-content p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+        }
+
+        .service-cta .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #00d4ff, #7b2ffc);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 16px 36px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            white-space: nowrap;
+        }
+
+        .service-cta .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .service-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-hero {
+                padding: 60px 20px 40px;
+            }
+
+            .service-hero h1 {
+                font-size: 28px;
+            }
+
+            .service-hero p {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .service-card-image {
+                height: 180px;
+            }
+
+            .service-card-content {
+                padding: 20px;
+            }
+
+            .service-card-content h3 {
+                font-size: 18px;
+            }
+
+            .service-cta {
+                padding: 40px 24px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-cta-content h3 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-hero h1 {
+                font-size: 24px;
+            }
+
+            .service-card-image {
+                height: 160px;
+            }
+
+            .service-card-content .service-features span {
+                font-size: 11px;
+                padding: 3px 10px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-card {
+            animation: fadeInUp 0.6s ease forwards;
             opacity: 0;
-            transform: translateY(30px);
         }
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        .service-card:nth-child(1) {
+            animation-delay: 0.1s;
         }
-    }
 
-    .service-card {
-        animation: fadeInUp 0.6s ease forwards;
-        opacity: 0;
-    }
+        .service-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
 
-    .service-card:nth-child(1) {
-        animation-delay: 0.1s;
-    }
+        .service-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
 
-    .service-card:nth-child(2) {
-        animation-delay: 0.2s;
-    }
+        .service-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
 
-    .service-card:nth-child(3) {
-        animation-delay: 0.3s;
-    }
+        .service-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
 
-    .service-card:nth-child(4) {
-        animation-delay: 0.4s;
-    }
-
-    .service-card:nth-child(5) {
-        animation-delay: 0.5s;
-    }
-
-    .service-card:nth-child(6) {
-        animation-delay: 0.6s;
-    }
+        .service-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
     </style>
 </head>
 
@@ -771,7 +771,8 @@
                             </div>
                             <div class="content">
                                 <h4>Location</h4>
-                                <p>No 15/69 Union Street,Thelliyar Agaram, Porur, Chennai - 600116</p>
+                                <p>DHANALAXMI NAGAR ANEX, 43A, Periya Kolathuvancheri, Iyyappanthangal, Chennai, Tamil
+                                    Nadu 600056</p>
 
                             </div>
                         </div>
@@ -872,209 +873,209 @@
     </div>
 
     <script>
-    // ===== TABS SCRIPT =====
-    document.addEventListener('DOMContentLoaded', function() {
-        const tabs = document.querySelectorAll('.tabs-nav button');
-        const contents = document.querySelectorAll('.tab-content');
+        // ===== TABS SCRIPT =====
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tabs-nav button');
+            const contents = document.querySelectorAll('.tab-content');
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                // Remove active class from all tabs
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
 
-                // Add active class to clicked tab
-                this.classList.add('active');
+                    // Add active class to clicked tab
+                    this.classList.add('active');
 
-                // Show corresponding content
-                const target = this.dataset.tab;
-                document.getElementById(target).classList.add('active');
+                    // Show corresponding content
+                    const target = this.dataset.tab;
+                    document.getElementById(target).classList.add('active');
+                });
             });
         });
-    });
 
-    // ===== MOBILE MENU =====
-    const toggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
+        // ===== MOBILE MENU =====
+        const toggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-    toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        mobileMenu.classList.toggle('open');
-    });
-
-    function closeMobile() {
-        toggle.classList.remove('active');
-        mobileMenu.classList.remove('open');
-    }
-
-    // ===== NAVBAR SCROLL =====
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 100);
-    });
-
-    // ===== DROPDOWN TOGGLE =====
-    // const dropdown = document.querySelector('.nav-dropdown');
-    // if (dropdown) {
-    //     dropdown.addEventListener('click', function(e) {
-    //         const link = this.querySelector('.nav-link');
-    //         if (link && e.target.closest('.nav-link')) {
-    //             this.classList.toggle('open');
-    //             e.preventDefault();
-    //         }
-    //     });
-    //     document.addEventListener('click', function(e) {
-    //         if (!dropdown.contains(e.target)) {
-    //             dropdown.classList.remove('open');
-    //         }
-    //     });
-    // }
-
-    const dropdown = document.querySelector('.nav-dropdown');
-
-    if (dropdown) {
-
-        dropdown.addEventListener("mouseenter", function() {
-            this.classList.add("open");
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
         });
 
-        dropdown.addEventListener("mouseleave", function() {
-            this.classList.remove("open");
-        });
-
-        const link = dropdown.querySelector(".nav-link");
-
-        link.addEventListener("click", function(e) {
-            e.preventDefault(); // Prevent navigation when clicking "Products"
-        });
-
-    }
-
-    // ===== MOBILE PRODUCTS DROPDOWN TOGGLE =====
-    const mobileProductsBtn = document.getElementById("mobileProductsBtn");
-
-    if (mobileProductsBtn) {
-        mobileProductsBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            this.parentElement.classList.toggle("active");
-        });
-    }
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function(e) {
-        const mobileDropdown = document.querySelector('.mobile-dropdown');
-        if (mobileDropdown && !mobileDropdown.contains(e.target)) {
-            mobileDropdown.classList.remove('active');
+        function closeMobile() {
+            toggle.classList.remove('active');
+            mobileMenu.classList.remove('open');
         }
-    });
 
-    // Prevent dropdown content clicks from closing the parent
-    const mobileDropdownContent = document.querySelector('.mobile-dropdown-content');
-    if (mobileDropdownContent) {
-        mobileDropdownContent.addEventListener('click', function(e) {
-            e.stopPropagation();
+        // ===== NAVBAR SCROLL =====
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 100);
         });
-    }
 
-    // ===== CLOSE MOBILE MENU ON LINK CLICK =====
-    const mobLinks = document.querySelectorAll('.mob-link:not(#mobileProductsBtn)');
-    mobLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            if (!this.closest('.mobile-dropdown')) {
+        // ===== DROPDOWN TOGGLE =====
+        // const dropdown = document.querySelector('.nav-dropdown');
+        // if (dropdown) {
+        //     dropdown.addEventListener('click', function(e) {
+        //         const link = this.querySelector('.nav-link');
+        //         if (link && e.target.closest('.nav-link')) {
+        //             this.classList.toggle('open');
+        //             e.preventDefault();
+        //         }
+        //     });
+        //     document.addEventListener('click', function(e) {
+        //         if (!dropdown.contains(e.target)) {
+        //             dropdown.classList.remove('open');
+        //         }
+        //     });
+        // }
+
+        const dropdown = document.querySelector('.nav-dropdown');
+
+        if (dropdown) {
+
+            dropdown.addEventListener("mouseenter", function () {
+                this.classList.add("open");
+            });
+
+            dropdown.addEventListener("mouseleave", function () {
+                this.classList.remove("open");
+            });
+
+            const link = dropdown.querySelector(".nav-link");
+
+            link.addEventListener("click", function (e) {
+                e.preventDefault(); // Prevent navigation when clicking "Products"
+            });
+
+        }
+
+        // ===== MOBILE PRODUCTS DROPDOWN TOGGLE =====
+        const mobileProductsBtn = document.getElementById("mobileProductsBtn");
+
+        if (mobileProductsBtn) {
+            mobileProductsBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                this.parentElement.classList.toggle("active");
+            });
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function (e) {
+            const mobileDropdown = document.querySelector('.mobile-dropdown');
+            if (mobileDropdown && !mobileDropdown.contains(e.target)) {
+                mobileDropdown.classList.remove('active');
+            }
+        });
+
+        // Prevent dropdown content clicks from closing the parent
+        const mobileDropdownContent = document.querySelector('.mobile-dropdown-content');
+        if (mobileDropdownContent) {
+            mobileDropdownContent.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        }
+
+        // ===== CLOSE MOBILE MENU ON LINK CLICK =====
+        const mobLinks = document.querySelectorAll('.mob-link:not(#mobileProductsBtn)');
+        mobLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (!this.closest('.mobile-dropdown')) {
+                    closeMobile();
+                }
+            });
+        });
+
+        // Also close when clicking dropdown items
+        const dropdownItems = document.querySelectorAll('.mobile-dropdown-content a');
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', function () {
                 closeMobile();
-            }
+            });
         });
-    });
 
-    // Also close when clicking dropdown items
-    const dropdownItems = document.querySelectorAll('.mobile-dropdown-content a');
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', function() {
-            closeMobile();
-        });
-    });
+        const brochureModal = document.getElementById("brochureModal");
+        const closeBtn = document.querySelector(".close-btn");
+        const pdfViewer = document.getElementById("pdfViewer");
 
-    const brochureModal = document.getElementById("brochureModal");
-    const closeBtn = document.querySelector(".close-btn");
-    const pdfViewer = document.getElementById("pdfViewer");
+        const pdfUrl =
+            "../assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
 
-    const pdfUrl =
-        "../assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
+        let pdfLoaded = false;
 
-    let pdfLoaded = false;
+        document.querySelectorAll(".openBrochure").forEach(btn => {
 
-    document.querySelectorAll(".openBrochure").forEach(btn => {
+            btn.addEventListener("click", async function (e) {
 
-        btn.addEventListener("click", async function(e) {
+                e.preventDefault();
 
-            e.preventDefault();
+                brochureModal.style.display = "block";
 
-            brochureModal.style.display = "block";
+                if (!pdfLoaded) {
 
-            if (!pdfLoaded) {
+                    pdfLoaded = true;
 
-                pdfLoaded = true;
+                    loadPDF();
+                }
 
-                loadPDF();
-            }
+            });
 
         });
 
-    });
-
-    closeBtn.onclick = () => {
-
-        brochureModal.style.display = "none";
-
-    }
-
-    window.onclick = (e) => {
-
-        if (e.target === brochureModal) {
+        closeBtn.onclick = () => {
 
             brochureModal.style.display = "none";
 
         }
 
-    }
+        window.onclick = (e) => {
 
-    async function loadPDF() {
+            if (e.target === brochureModal) {
 
-        pdfViewer.innerHTML = "";
+                brochureModal.style.display = "none";
 
-        const loadingTask = pdfjsLib.getDocument(pdfUrl);
-
-        const pdf = await loadingTask.promise;
-
-        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-
-            const page = await pdf.getPage(pageNum);
-
-            const viewport = page.getViewport({
-                scale: 1.5
-            });
-
-            const canvas = document.createElement("canvas");
-
-            const context = canvas.getContext("2d");
-
-            canvas.width = viewport.width;
-
-            canvas.height = viewport.height;
-
-            await page.render({
-
-                canvasContext: context,
-
-                viewport: viewport
-
-            }).promise;
-
-            pdfViewer.appendChild(canvas);
+            }
 
         }
 
-    }
+        async function loadPDF() {
+
+            pdfViewer.innerHTML = "";
+
+            const loadingTask = pdfjsLib.getDocument(pdfUrl);
+
+            const pdf = await loadingTask.promise;
+
+            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+
+                const page = await pdf.getPage(pageNum);
+
+                const viewport = page.getViewport({
+                    scale: 1.5
+                });
+
+                const canvas = document.createElement("canvas");
+
+                const context = canvas.getContext("2d");
+
+                canvas.width = viewport.width;
+
+                canvas.height = viewport.height;
+
+                await page.render({
+
+                    canvasContext: context,
+
+                    viewport: viewport
+
+                }).promise;
+
+                pdfViewer.appendChild(canvas);
+
+            }
+
+        }
     </script>
     <script type="application/ld+json">
     {
@@ -1091,141 +1092,141 @@
     }
     </script>
     <script>
-    function showSnackbar(message, type) {
+        function showSnackbar(message, type) {
 
-        const snackbar = document.getElementById("snackbar");
+            const snackbar = document.getElementById("snackbar");
 
-        snackbar.innerHTML = message;
-        snackbar.className = "show " + type;
+            snackbar.innerHTML = message;
+            snackbar.className = "show " + type;
 
-        setTimeout(() => {
-            snackbar.className = snackbar.className.replace("show", "");
-        }, 3000);
-    }
+            setTimeout(() => {
+                snackbar.className = snackbar.className.replace("show", "");
+            }, 3000);
+        }
 
-    <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
+        <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
 
-    showSnackbar("✅ Message sent successfully.", "success");
+            showSnackbar("✅ Message sent successfully.", "success");
 
-    <?php } ?>
+        <?php } ?>
 
-    <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
+        <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
 
-    showSnackbar("❌ Failed to send message.", "error");
+            showSnackbar("❌ Failed to send message.", "error");
 
-    <?php } ?>
+        <?php } ?>
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
     <script>
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        pdfjsLib.GlobalWorkerOptions.workerSrc =
+            'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
     </script>
 
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("DOMContentLoaded", () => {
 
-        const loader = document.getElementById("pageLoader");
+            const loader = document.getElementById("pageLoader");
 
-        document.querySelectorAll("a[href]").forEach(link => {
+            document.querySelectorAll("a[href]").forEach(link => {
 
-            link.addEventListener("click", function(e) {
+                link.addEventListener("click", function (e) {
 
-                const href = this.getAttribute("href");
+                    const href = this.getAttribute("href");
 
-                // Ignore anchors, javascript links and new tabs
-                if (
-                    href.startsWith("#") ||
-                    href.startsWith("javascript:") ||
-                    this.target === "_blank"
-                ) {
-                    return;
-                }
+                    // Ignore anchors, javascript links and new tabs
+                    if (
+                        href.startsWith("#") ||
+                        href.startsWith("javascript:") ||
+                        this.target === "_blank"
+                    ) {
+                        return;
+                    }
 
-                e.preventDefault();
+                    e.preventDefault();
 
-                loader.classList.add("show");
+                    loader.classList.add("show");
 
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 500);
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 500);
+
+                });
 
             });
 
         });
 
-    });
+        window.addEventListener("pageshow", function (event) {
 
-    window.addEventListener("pageshow", function(event) {
+            const loader = document.getElementById("pageLoader");
 
-        const loader = document.getElementById("pageLoader");
-
-        loader.classList.remove("show");
-
-        if (event.persisted) {
             loader.classList.remove("show");
-        }
 
-        setTimeout(() => {
-            window.location.href = href;
-        }, 500);
+            if (event.persisted) {
+                loader.classList.remove("show");
+            }
 
-    });
+            setTimeout(() => {
+                window.location.href = href;
+            }, 500);
 
-    const floatingContact = document.querySelector(".floating-contact");
-    const floatingBtn = document.getElementById("floatingBtn");
-    const floatingIcon = document.getElementById("floatingIcon");
-
-    const STORAGE_KEY = "floatingContactOpen";
-    const SCROLL_KEY = "floatingContactScrollY";
-
-    // Toggle handler
-    floatingBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        toggleFloating();
-    });
-
-    function toggleFloating() {
-        floatingContact.classList.toggle("active");
-        const isActive = floatingContact.classList.contains("active");
-
-        floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
-
-        // Persist state
-        sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
-    }
-
-    // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
-    document.querySelectorAll(".contact-option").forEach(link => {
-        link.addEventListener("click", () => {
-            sessionStorage.setItem(SCROLL_KEY, window.scrollY);
         });
-    });
 
-    // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
-    window.addEventListener("DOMContentLoaded", () => {
-        const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-        if (wasActive) {
-            floatingContact.classList.add("active");
-            floatingIcon.className = "ti ti-x";
+        const floatingContact = document.querySelector(".floating-contact");
+        const floatingBtn = document.getElementById("floatingBtn");
+        const floatingIcon = document.getElementById("floatingIcon");
+
+        const STORAGE_KEY = "floatingContactOpen";
+        const SCROLL_KEY = "floatingContactScrollY";
+
+        // Toggle handler
+        floatingBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            toggleFloating();
+        });
+
+        function toggleFloating() {
+            floatingContact.classList.toggle("active");
+            const isActive = floatingContact.classList.contains("active");
+
+            floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
+
+            // Persist state
+            sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
         }
 
-        const savedScroll = sessionStorage.getItem(SCROLL_KEY);
-        if (savedScroll) {
-            window.scrollTo(0, parseInt(savedScroll, 10));
-            sessionStorage.removeItem(SCROLL_KEY); // one-time restore
-        }
-    });
+        // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
+        document.querySelectorAll(".contact-option").forEach(link => {
+            link.addEventListener("click", () => {
+                sessionStorage.setItem(SCROLL_KEY, window.scrollY);
+            });
+        });
 
-    // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
-    window.addEventListener("pageshow", (event) => {
-        if (event.persisted) {
+        // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
+        window.addEventListener("DOMContentLoaded", () => {
             const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-            floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
-            floatingContact.classList.toggle("active", wasActive);
-        }
-    });
+            if (wasActive) {
+                floatingContact.classList.add("active");
+                floatingIcon.className = "ti ti-x";
+            }
+
+            const savedScroll = sessionStorage.getItem(SCROLL_KEY);
+            if (savedScroll) {
+                window.scrollTo(0, parseInt(savedScroll, 10));
+                sessionStorage.removeItem(SCROLL_KEY); // one-time restore
+            }
+        });
+
+        // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
+        window.addEventListener("pageshow", (event) => {
+            if (event.persisted) {
+                const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+                floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
+                floatingContact.classList.toggle("active", wasActive);
+            }
+        });
     </script>
 
 </body>

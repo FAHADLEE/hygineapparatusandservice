@@ -432,7 +432,8 @@
                             </div>
                             <div class="content">
                                 <h4>Location</h4>
-                                <p>No 15/69 Union Street,Thelliyar Agaram, Porur, Chennai - 600116</p>
+                                <p>DHANALAXMI NAGAR ANEX, 43A, Periya Kolathuvancheri, Iyyappanthangal, Chennai, Tamil
+                                    Nadu 600056</p>
 
                             </div>
                         </div>
@@ -535,331 +536,331 @@
 
 
     <script>
-    // ===== TABS SCRIPT =====
-    document.addEventListener('DOMContentLoaded', function() {
-        const tabs = document.querySelectorAll('.tabs-nav button');
-        const contents = document.querySelectorAll('.tab-content');
+        // ===== TABS SCRIPT =====
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tabs-nav button');
+            const contents = document.querySelectorAll('.tab-content');
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                // Remove active class from all tabs
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
 
-                // Add active class to clicked tab
-                this.classList.add('active');
+                    // Add active class to clicked tab
+                    this.classList.add('active');
 
-                // Show corresponding content
-                const target = this.dataset.tab;
-                document.getElementById(target).classList.add('active');
+                    // Show corresponding content
+                    const target = this.dataset.tab;
+                    document.getElementById(target).classList.add('active');
+                });
             });
         });
-    });
 
-    // ===== MOBILE MENU =====
-    const toggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
+        // ===== MOBILE MENU =====
+        const toggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-    toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        mobileMenu.classList.toggle('open');
-    });
-
-    function closeMobile() {
-        toggle.classList.remove('active');
-        mobileMenu.classList.remove('open');
-    }
-
-    // ===== NAVBAR SCROLL =====
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 100);
-    });
-
-    // ===== DROPDOWN TOGGLE =====
-    const dropdown = document.querySelector('.nav-dropdown');
-
-    if (dropdown) {
-
-        dropdown.addEventListener("mouseenter", function() {
-            this.classList.add("open");
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
         });
 
-        dropdown.addEventListener("mouseleave", function() {
-            this.classList.remove("open");
-        });
-
-        const link = dropdown.querySelector(".nav-link");
-
-        link.addEventListener("click", function(e) {
-            e.preventDefault(); // Prevent navigation when clicking "Products"
-        });
-
-    }
-
-    // ===== MOBILE PRODUCTS DROPDOWN TOGGLE =====
-    const mobileProductsBtn = document.getElementById("mobileProductsBtn");
-
-    if (mobileProductsBtn) {
-        mobileProductsBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            this.parentElement.classList.toggle("active");
-        });
-    }
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function(e) {
-        const mobileDropdown = document.querySelector('.mobile-dropdown');
-        if (mobileDropdown && !mobileDropdown.contains(e.target)) {
-            mobileDropdown.classList.remove('active');
+        function closeMobile() {
+            toggle.classList.remove('active');
+            mobileMenu.classList.remove('open');
         }
-    });
 
-    // Prevent dropdown content clicks from closing the parent
-    const mobileDropdownContent = document.querySelector('.mobile-dropdown-content');
-    if (mobileDropdownContent) {
-        mobileDropdownContent.addEventListener('click', function(e) {
-            e.stopPropagation();
+        // ===== NAVBAR SCROLL =====
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 100);
         });
-    }
 
-    // ===== CLOSE MOBILE MENU ON LINK CLICK =====
-    const mobLinks = document.querySelectorAll('.mob-link:not(#mobileProductsBtn)');
-    mobLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            if (!this.closest('.mobile-dropdown')) {
+        // ===== DROPDOWN TOGGLE =====
+        const dropdown = document.querySelector('.nav-dropdown');
+
+        if (dropdown) {
+
+            dropdown.addEventListener("mouseenter", function () {
+                this.classList.add("open");
+            });
+
+            dropdown.addEventListener("mouseleave", function () {
+                this.classList.remove("open");
+            });
+
+            const link = dropdown.querySelector(".nav-link");
+
+            link.addEventListener("click", function (e) {
+                e.preventDefault(); // Prevent navigation when clicking "Products"
+            });
+
+        }
+
+        // ===== MOBILE PRODUCTS DROPDOWN TOGGLE =====
+        const mobileProductsBtn = document.getElementById("mobileProductsBtn");
+
+        if (mobileProductsBtn) {
+            mobileProductsBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                this.parentElement.classList.toggle("active");
+            });
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function (e) {
+            const mobileDropdown = document.querySelector('.mobile-dropdown');
+            if (mobileDropdown && !mobileDropdown.contains(e.target)) {
+                mobileDropdown.classList.remove('active');
+            }
+        });
+
+        // Prevent dropdown content clicks from closing the parent
+        const mobileDropdownContent = document.querySelector('.mobile-dropdown-content');
+        if (mobileDropdownContent) {
+            mobileDropdownContent.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        }
+
+        // ===== CLOSE MOBILE MENU ON LINK CLICK =====
+        const mobLinks = document.querySelectorAll('.mob-link:not(#mobileProductsBtn)');
+        mobLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (!this.closest('.mobile-dropdown')) {
+                    closeMobile();
+                }
+            });
+        });
+
+        // Also close when clicking dropdown items
+        const dropdownItems = document.querySelectorAll('.mobile-dropdown-content a');
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', function () {
                 closeMobile();
-            }
+            });
         });
-    });
 
-    // Also close when clicking dropdown items
-    const dropdownItems = document.querySelectorAll('.mobile-dropdown-content a');
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', function() {
-            closeMobile();
-        });
-    });
+        const brochureModal = document.getElementById("brochureModal");
+        const closeBtn = document.querySelector(".close-btn");
+        const pdfViewer = document.getElementById("pdfViewer");
 
-    const brochureModal = document.getElementById("brochureModal");
-    const closeBtn = document.querySelector(".close-btn");
-    const pdfViewer = document.getElementById("pdfViewer");
+        const pdfUrl =
+            "../../assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
 
-    const pdfUrl =
-        "../../assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
+        let pdfLoaded = false;
 
-    let pdfLoaded = false;
+        document.querySelectorAll(".openBrochure").forEach(btn => {
 
-    document.querySelectorAll(".openBrochure").forEach(btn => {
+            btn.addEventListener("click", async function (e) {
 
-        btn.addEventListener("click", async function(e) {
+                e.preventDefault();
 
-            e.preventDefault();
+                brochureModal.style.display = "block";
 
-            brochureModal.style.display = "block";
+                if (!pdfLoaded) {
 
-            if (!pdfLoaded) {
+                    pdfLoaded = true;
 
-                pdfLoaded = true;
+                    loadPDF();
+                }
 
-                loadPDF();
-            }
+            });
 
         });
 
-    });
-
-    closeBtn.onclick = () => {
-
-        brochureModal.style.display = "none";
-
-    }
-
-    window.onclick = (e) => {
-
-        if (e.target === brochureModal) {
+        closeBtn.onclick = () => {
 
             brochureModal.style.display = "none";
 
         }
 
-    }
+        window.onclick = (e) => {
 
-    async function loadPDF() {
+            if (e.target === brochureModal) {
 
-        pdfViewer.innerHTML = "";
+                brochureModal.style.display = "none";
 
-        const loadingTask = pdfjsLib.getDocument(pdfUrl);
-
-        const pdf = await loadingTask.promise;
-
-        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-
-            const page = await pdf.getPage(pageNum);
-
-            const viewport = page.getViewport({
-                scale: 1.5
-            });
-
-            const canvas = document.createElement("canvas");
-
-            const context = canvas.getContext("2d");
-
-            canvas.width = viewport.width;
-
-            canvas.height = viewport.height;
-
-            await page.render({
-
-                canvasContext: context,
-
-                viewport: viewport
-
-            }).promise;
-
-            pdfViewer.appendChild(canvas);
+            }
 
         }
 
-    }
+        async function loadPDF() {
+
+            pdfViewer.innerHTML = "";
+
+            const loadingTask = pdfjsLib.getDocument(pdfUrl);
+
+            const pdf = await loadingTask.promise;
+
+            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+
+                const page = await pdf.getPage(pageNum);
+
+                const viewport = page.getViewport({
+                    scale: 1.5
+                });
+
+                const canvas = document.createElement("canvas");
+
+                const context = canvas.getContext("2d");
+
+                canvas.width = viewport.width;
+
+                canvas.height = viewport.height;
+
+                await page.render({
+
+                    canvasContext: context,
+
+                    viewport: viewport
+
+                }).promise;
+
+                pdfViewer.appendChild(canvas);
+
+            }
+
+        }
     </script>
 
     <script>
-    function showSnackbar(message, type) {
+        function showSnackbar(message, type) {
 
-        const snackbar = document.getElementById("snackbar");
+            const snackbar = document.getElementById("snackbar");
 
-        snackbar.innerHTML = message;
-        snackbar.className = "show " + type;
+            snackbar.innerHTML = message;
+            snackbar.className = "show " + type;
 
-        setTimeout(() => {
-            snackbar.className = snackbar.className.replace("show", "");
-        }, 3000);
-    }
+            setTimeout(() => {
+                snackbar.className = snackbar.className.replace("show", "");
+            }, 3000);
+        }
 
-    <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
+        <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
 
-    showSnackbar("✅ Message sent successfully.", "success");
+            showSnackbar("✅ Message sent successfully.", "success");
 
-    <?php } ?>
+        <?php } ?>
 
-    <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
+        <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
 
-    showSnackbar("❌ Failed to send message.", "error");
+            showSnackbar("❌ Failed to send message.", "error");
 
-    <?php } ?>
+        <?php } ?>
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
     <script>
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        pdfjsLib.GlobalWorkerOptions.workerSrc =
+            'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
     </script>
 
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("DOMContentLoaded", () => {
 
-        const loader = document.getElementById("pageLoader");
+            const loader = document.getElementById("pageLoader");
 
-        document.querySelectorAll("a[href]").forEach(link => {
+            document.querySelectorAll("a[href]").forEach(link => {
 
-            link.addEventListener("click", function(e) {
+                link.addEventListener("click", function (e) {
 
-                const href = this.getAttribute("href");
+                    const href = this.getAttribute("href");
 
-                // Ignore anchors, javascript links and new tabs
-                if (
-                    href.startsWith("#") ||
-                    href.startsWith("javascript:") ||
-                    this.target === "_blank"
-                ) {
-                    return;
-                }
+                    // Ignore anchors, javascript links and new tabs
+                    if (
+                        href.startsWith("#") ||
+                        href.startsWith("javascript:") ||
+                        this.target === "_blank"
+                    ) {
+                        return;
+                    }
 
-                e.preventDefault();
+                    e.preventDefault();
 
-                loader.classList.add("show");
+                    loader.classList.add("show");
 
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 500);
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 500);
+
+                });
 
             });
 
         });
 
-    });
+        window.addEventListener("pageshow", function (event) {
 
-    window.addEventListener("pageshow", function(event) {
+            const loader = document.getElementById("pageLoader");
 
-        const loader = document.getElementById("pageLoader");
-
-        loader.classList.remove("show");
-
-        if (event.persisted) {
             loader.classList.remove("show");
-        }
 
-        setTimeout(() => {
-            window.location.href = href;
-        }, 500);
+            if (event.persisted) {
+                loader.classList.remove("show");
+            }
 
-    });
+            setTimeout(() => {
+                window.location.href = href;
+            }, 500);
 
-    const floatingContact = document.querySelector(".floating-contact");
-    const floatingBtn = document.getElementById("floatingBtn");
-    const floatingIcon = document.getElementById("floatingIcon");
-
-    const STORAGE_KEY = "floatingContactOpen";
-    const SCROLL_KEY = "floatingContactScrollY";
-
-    // Toggle handler
-    floatingBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        toggleFloating();
-    });
-
-    function toggleFloating() {
-        floatingContact.classList.toggle("active");
-        const isActive = floatingContact.classList.contains("active");
-
-        floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
-
-        // Persist state
-        sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
-    }
-
-    // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
-    document.querySelectorAll(".contact-option").forEach(link => {
-        link.addEventListener("click", () => {
-            sessionStorage.setItem(SCROLL_KEY, window.scrollY);
         });
-    });
 
-    // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
-    window.addEventListener("DOMContentLoaded", () => {
-        const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-        if (wasActive) {
-            floatingContact.classList.add("active");
-            floatingIcon.className = "ti ti-x";
+        const floatingContact = document.querySelector(".floating-contact");
+        const floatingBtn = document.getElementById("floatingBtn");
+        const floatingIcon = document.getElementById("floatingIcon");
+
+        const STORAGE_KEY = "floatingContactOpen";
+        const SCROLL_KEY = "floatingContactScrollY";
+
+        // Toggle handler
+        floatingBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            toggleFloating();
+        });
+
+        function toggleFloating() {
+            floatingContact.classList.toggle("active");
+            const isActive = floatingContact.classList.contains("active");
+
+            floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
+
+            // Persist state
+            sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
         }
 
-        const savedScroll = sessionStorage.getItem(SCROLL_KEY);
-        if (savedScroll) {
-            window.scrollTo(0, parseInt(savedScroll, 10));
-            sessionStorage.removeItem(SCROLL_KEY); // one-time restore
-        }
-    });
+        // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
+        document.querySelectorAll(".contact-option").forEach(link => {
+            link.addEventListener("click", () => {
+                sessionStorage.setItem(SCROLL_KEY, window.scrollY);
+            });
+        });
 
-    // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
-    window.addEventListener("pageshow", (event) => {
-        if (event.persisted) {
+        // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
+        window.addEventListener("DOMContentLoaded", () => {
             const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-            floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
-            floatingContact.classList.toggle("active", wasActive);
-        }
-    });
+            if (wasActive) {
+                floatingContact.classList.add("active");
+                floatingIcon.className = "ti ti-x";
+            }
+
+            const savedScroll = sessionStorage.getItem(SCROLL_KEY);
+            if (savedScroll) {
+                window.scrollTo(0, parseInt(savedScroll, 10));
+                sessionStorage.removeItem(SCROLL_KEY); // one-time restore
+            }
+        });
+
+        // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
+        window.addEventListener("pageshow", (event) => {
+            if (event.persisted) {
+                const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+                floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
+                floatingContact.classList.toggle("active", wasActive);
+            }
+        });
     </script>
 </body>
 
