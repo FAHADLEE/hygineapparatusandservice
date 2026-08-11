@@ -423,7 +423,7 @@ Cleaning Equipment Tamil Nadu
                     <!-- Map Section -->
                     <div class="map-section">
                         <iframe
-                            src="https://maps.google.com/maps?q=13.026914596557617,80.13716888427734&z=17&output=embed"
+                            src="https://maps.google.com/maps?q=13.025524929298998,80.13663218650854&z=17&output=embed"
                             width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
