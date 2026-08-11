@@ -248,10 +248,14 @@
 
             <!-- Map Section -->
             <div class="map-section">
-                <iframe src="https://maps.google.com/maps?q=13.025524929298998,80.13663218650854&z=17&output=embed"
+                <!-- <iframe src="https://maps.google.com/maps?q=13.025524929298998,80.13663218650854&z=17&output=embed"
                     width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" title="Hygiene Apparatus & Service Location">
-                </iframe>
+                </iframe> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1625114686703!2d80.1366!3d13.0253211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526705000082d1%3A0xa48cf2250aabcf4c!2sHygiene%20Apparatus%20and%20Service!5e0!3m2!1sen!2sin!4v1786446208196!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Hygiene Apparatus & Service Location"></iframe>
             </div>
 
         </div>

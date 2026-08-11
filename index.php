@@ -422,11 +422,16 @@ Cleaning Equipment Tamil Nadu
 
                     <!-- Map Section -->
                     <div class="map-section">
-                        <iframe
+                        <!-- <iframe
                             src="https://maps.google.com/maps?q=13.025524929298998,80.13663218650854&z=17&output=embed"
                             width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        </iframe> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1625114686703!2d80.1366!3d13.0253211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526705000082d1%3A0xa48cf2250aabcf4c!2sHygiene%20Apparatus%20and%20Service!5e0!3m2!1sen!2sin!4v1786446208196!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Hygiene Apparatus & Service Location"></iframe>
                     </div>
 
                 </div>
@@ -504,8 +509,8 @@ Cleaning Equipment Tamil Nadu
     </div>
 
     <script>
-        // ===== PRODUCTS DATA =====
-        const products = [{
+    // ===== PRODUCTS DATA =====
+    const products = [{
             name: "VACUUM CLEANERS",
             image: "./pages/assets/Products/Vacuum Cleaners.png",
             link: "./pages/Products/Vaccumecleaners.php"
@@ -550,88 +555,104 @@ Cleaning Equipment Tamil Nadu
             image: "./pages/assets/Products/Mops and Brushes.png",
             link: "./pages/Products/MopsandBrushes.php"
         }
-        ];
+    ];
 
-        const grid = document.getElementById('productsGrid');
+    const grid = document.getElementById('productsGrid');
 
-        products.forEach(p => {
+    products.forEach(p => {
 
-            const card = document.createElement('div');
-            card.className = 'product-item';
+        const card = document.createElement('div');
+        card.className = 'product-item';
 
-            card.innerHTML = `
+        card.innerHTML = `
         <div class="icon-circle">
             <img src="${p.image}" alt="${p.name}">
         </div>
         <h3>${p.name}</h3>
     `;
 
-            card.style.cursor = "pointer";
+        card.style.cursor = "pointer";
 
-            card.addEventListener("click", function () {
+        card.addEventListener("click", function() {
 
-                document.getElementById("pageLoader").classList.add("show");
+            document.getElementById("pageLoader").classList.add("show");
 
-                setTimeout(() => {
-                    window.location.href = p.link;
-                }, 500);
-
-            });
-
-            grid.appendChild(card);
+            setTimeout(() => {
+                window.location.href = p.link;
+            }, 500);
 
         });
 
-        // ===== SCROLL ENGINE =====
-        const container = document.getElementById('scrollContainer');
-        const sections = container.querySelectorAll('.section');
-        const dots = document.querySelectorAll('.dot');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const mobLinks = document.querySelectorAll('.mob-link');
-        let currentIdx = 0;
-        let autoTimer = null;
-        let isPaused = false;
+        grid.appendChild(card);
 
-        function goTo(idx) {
-            if (idx < 0 || idx >= sections.length) return;
-            currentIdx = idx;
-            container.scrollTo({
-                top: idx * window.innerHeight,
-                behavior: 'smooth'
-            });
-            updateActive(idx);
-        }
+    });
 
-        function updateActive(idx) {
-            dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-            navLinks.forEach((l, i) => {
-                if (i < 4) {
-                    l.classList.toggle('active', i === idx);
-                }
-            });
-        }
+    // ===== SCROLL ENGINE =====
+    const container = document.getElementById('scrollContainer');
+    const sections = container.querySelectorAll('.section');
+    const dots = document.querySelectorAll('.dot');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobLinks = document.querySelectorAll('.mob-link');
+    let currentIdx = 0;
+    let autoTimer = null;
+    let isPaused = false;
 
-        function startAuto() {
+    function goTo(idx) {
+        if (idx < 0 || idx >= sections.length) return;
+        currentIdx = idx;
+        container.scrollTo({
+            top: idx * window.innerHeight,
+            behavior: 'smooth'
+        });
+        updateActive(idx);
+    }
+
+    function updateActive(idx) {
+        dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        navLinks.forEach((l, i) => {
+            if (i < 4) {
+                l.classList.toggle('active', i === idx);
+            }
+        });
+    }
+
+    function startAuto() {
+        clearInterval(autoTimer);
+        autoTimer = setInterval(() => {
+            if (!isPaused) {
+                goTo((currentIdx + 1) % sections.length);
+            }
+        }, 4000);
+    }
+
+    // Dot clicks
+    dots.forEach(d => {
+        d.addEventListener('click', () => {
             clearInterval(autoTimer);
-            autoTimer = setInterval(() => {
-                if (!isPaused) {
-                    goTo((currentIdx + 1) % sections.length);
-                }
-            }, 4000);
-        }
-
-        // Dot clicks
-        dots.forEach(d => {
-            d.addEventListener('click', () => {
-                clearInterval(autoTimer);
-                goTo(+d.dataset.idx);
-                startAuto();
-            });
+            goTo(+d.dataset.idx);
+            startAuto();
         });
+    });
 
-        // Nav links
-        document.querySelectorAll('.nav-link[href^="#"]').forEach(l => {
-            l.addEventListener('click', (e) => {
+    // Nav links
+    document.querySelectorAll('.nav-link[href^="#"]').forEach(l => {
+        l.addEventListener('click', (e) => {
+            e.preventDefault();
+            clearInterval(autoTimer);
+            const idx = +l.dataset.idx;
+            if (!isNaN(idx)) {
+                goTo(idx);
+                startAuto();
+            }
+            closeMobile();
+        });
+    });
+
+    // Mobile links
+    mobLinks.forEach(l => {
+        l.addEventListener('click', (e) => {
+            const href = l.getAttribute('href');
+            if (href && href.startsWith('#')) {
                 e.preventDefault();
                 clearInterval(autoTimer);
                 const idx = +l.dataset.idx;
@@ -640,380 +661,364 @@ Cleaning Equipment Tamil Nadu
                     startAuto();
                 }
                 closeMobile();
-            });
-        });
-
-        // Mobile links
-        mobLinks.forEach(l => {
-            l.addEventListener('click', (e) => {
-                const href = l.getAttribute('href');
-                if (href && href.startsWith('#')) {
-                    e.preventDefault();
-                    clearInterval(autoTimer);
-                    const idx = +l.dataset.idx;
-                    if (!isNaN(idx)) {
-                        goTo(idx);
-                        startAuto();
-                    }
-                    closeMobile();
-                }
-            });
-        });
-
-        // Sync on scroll
-        container.addEventListener('scroll', () => {
-            const idx = Math.round(container.scrollTop / window.innerHeight);
-            if (idx !== currentIdx) {
-                currentIdx = idx;
-                updateActive(idx);
             }
         });
+    });
 
-        // Pause on interaction
-        document.addEventListener('mouseenter', () => {
-            isPaused = true;
-        });
-        document.addEventListener('mouseleave', () => {
+    // Sync on scroll
+    container.addEventListener('scroll', () => {
+        const idx = Math.round(container.scrollTop / window.innerHeight);
+        if (idx !== currentIdx) {
+            currentIdx = idx;
+            updateActive(idx);
+        }
+    });
+
+    // Pause on interaction
+    document.addEventListener('mouseenter', () => {
+        isPaused = true;
+    });
+    document.addEventListener('mouseleave', () => {
+        isPaused = false;
+    });
+    ['wheel', 'touchstart'].forEach(ev => {
+        window.addEventListener(ev, () => {
+            clearInterval(autoTimer);
             isPaused = false;
+        }, {
+            passive: true
         });
-        ['wheel', 'touchstart'].forEach(ev => {
-            window.addEventListener(ev, () => {
-                clearInterval(autoTimer);
-                isPaused = false;
-            }, {
-                passive: true
-            });
-        });
+    });
 
-        // ===== MOBILE MENU =====
-        const toggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
+    // ===== MOBILE MENU =====
+    const toggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-        toggle.addEventListener('click', () => {
-            toggle.classList.toggle('active');
-            mobileMenu.classList.toggle('open');
-        });
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        mobileMenu.classList.toggle('open');
+    });
 
-        function closeMobile() {
-            toggle.classList.remove('active');
-            mobileMenu.classList.remove('open');
-        }
+    function closeMobile() {
+        toggle.classList.remove('active');
+        mobileMenu.classList.remove('open');
+    }
 
-        // ===== NAVBAR SCROLL =====
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 100);
-        });
+    // ===== NAVBAR SCROLL =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 100);
+    });
 
-        // ===== START =====
-        goTo(0);
-        startAuto();
+    // ===== START =====
+    goTo(0);
+    startAuto();
 
-        // ===== DROPDOWN TOGGLE =====
-        const dropdown = document.querySelector('.nav-dropdown');
-        if (dropdown) {
-            dropdown.addEventListener('click', function (e) {
-                const link = this.querySelector('.nav-link');
-                if (link && e.target.closest('.nav-link')) {
-                    this.classList.toggle('open');
-                    e.preventDefault();
-                }
-            });
-            document.addEventListener('click', function (e) {
-                if (!dropdown.contains(e.target)) {
-                    dropdown.classList.remove('open');
-                }
-            });
-        }
-
-        // Mobile products dropdown toggle
-        const mobileProductsBtn = document.getElementById("mobileProductsBtn");
-        const mobileProductsDropdown = document.getElementById("mobileProductsDropdown");
-
-        mobileProductsBtn.addEventListener("click", function (e) {
-            e.stopPropagation();
-            mobileProductsDropdown.classList.toggle("active");
-        });
-
-        document.addEventListener('click', function (e) {
-            if (!mobileProductsDropdown.contains(e.target)) {
-                mobileProductsDropdown.classList.remove('active');
+    // ===== DROPDOWN TOGGLE =====
+    const dropdown = document.querySelector('.nav-dropdown');
+    if (dropdown) {
+        dropdown.addEventListener('click', function(e) {
+            const link = this.querySelector('.nav-link');
+            if (link && e.target.closest('.nav-link')) {
+                this.classList.toggle('open');
+                e.preventDefault();
             }
         });
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('open');
+            }
+        });
+    }
+
+    // Mobile products dropdown toggle
+    const mobileProductsBtn = document.getElementById("mobileProductsBtn");
+    const mobileProductsDropdown = document.getElementById("mobileProductsDropdown");
+
+    mobileProductsBtn.addEventListener("click", function(e) {
+        e.stopPropagation();
+        mobileProductsDropdown.classList.toggle("active");
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!mobileProductsDropdown.contains(e.target)) {
+            mobileProductsDropdown.classList.remove('active');
+        }
+    });
 
 
-        //         const brochureModal = document.getElementById("brochureModal");
-        // const closeBtn = document.querySelector(".close-btn");
+    //         const brochureModal = document.getElementById("brochureModal");
+    // const closeBtn = document.querySelector(".close-btn");
 
-        // document.querySelectorAll(".openBrochure").forEach(btn => {
-        //     btn.addEventListener("click", function (e) {
-        //         e.preventDefault();
-        //         brochureModal.style.display = "block";
-        //     });
-        // });
+    // document.querySelectorAll(".openBrochure").forEach(btn => {
+    //     btn.addEventListener("click", function (e) {
+    //         e.preventDefault();
+    //         brochureModal.style.display = "block";
+    //     });
+    // });
 
-        // closeBtn.addEventListener("click", function () {
-        //     brochureModal.style.display = "none";
-        // });
+    // closeBtn.addEventListener("click", function () {
+    //     brochureModal.style.display = "none";
+    // });
 
-        // window.addEventListener("click", function (e) {
-        //     if (e.target === brochureModal) {
-        //         brochureModal.style.display = "none";
-        //     }
-        // });
+    // window.addEventListener("click", function (e) {
+    //     if (e.target === brochureModal) {
+    //         brochureModal.style.display = "none";
+    //     }
+    // });
 
-        const brochureModal = document.getElementById("brochureModal");
-        const closeBtn = document.querySelector(".close-btn");
-        const pdfViewer = document.getElementById("pdfViewer");
+    const brochureModal = document.getElementById("brochureModal");
+    const closeBtn = document.querySelector(".close-btn");
+    const pdfViewer = document.getElementById("pdfViewer");
 
-        const pdfUrl =
-            "./pages/assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
+    const pdfUrl =
+        "./pages/assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
 
-        let pdfLoaded = false;
+    let pdfLoaded = false;
 
-        document.querySelectorAll(".openBrochure").forEach(btn => {
+    document.querySelectorAll(".openBrochure").forEach(btn => {
 
-            btn.addEventListener("click", async function (e) {
+        btn.addEventListener("click", async function(e) {
 
-                e.preventDefault();
+            e.preventDefault();
 
-                brochureModal.style.display = "block";
+            brochureModal.style.display = "block";
 
-                if (!pdfLoaded) {
+            if (!pdfLoaded) {
 
-                    pdfLoaded = true;
+                pdfLoaded = true;
 
-                    loadPDF();
-                }
-
-            });
+                loadPDF();
+            }
 
         });
 
-        closeBtn.onclick = () => {
+    });
+
+    closeBtn.onclick = () => {
+
+        brochureModal.style.display = "none";
+
+    }
+
+    window.onclick = (e) => {
+
+        if (e.target === brochureModal) {
 
             brochureModal.style.display = "none";
 
         }
 
-        window.onclick = (e) => {
+    }
 
-            if (e.target === brochureModal) {
+    async function loadPDF() {
 
-                brochureModal.style.display = "none";
+        pdfViewer.innerHTML = "";
 
-            }
+        const loadingTask = pdfjsLib.getDocument(pdfUrl);
 
-        }
+        const pdf = await loadingTask.promise;
 
-        async function loadPDF() {
+        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
 
-            pdfViewer.innerHTML = "";
+            const page = await pdf.getPage(pageNum);
 
-            const loadingTask = pdfjsLib.getDocument(pdfUrl);
+            const viewport = page.getViewport({
+                scale: 1.5
+            });
 
-            const pdf = await loadingTask.promise;
+            const canvas = document.createElement("canvas");
 
-            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+            const context = canvas.getContext("2d");
 
-                const page = await pdf.getPage(pageNum);
+            canvas.width = viewport.width;
 
-                const viewport = page.getViewport({
-                    scale: 1.5
-                });
+            canvas.height = viewport.height;
 
-                const canvas = document.createElement("canvas");
+            await page.render({
 
-                const context = canvas.getContext("2d");
+                canvasContext: context,
 
-                canvas.width = viewport.width;
+                viewport: viewport
 
-                canvas.height = viewport.height;
+            }).promise;
 
-                await page.render({
-
-                    canvasContext: context,
-
-                    viewport: viewport
-
-                }).promise;
-
-                pdfViewer.appendChild(canvas);
-
-            }
+            pdfViewer.appendChild(canvas);
 
         }
+
+    }
     </script>
     <script>
-        function showSnackbar(message, type) {
+    function showSnackbar(message, type) {
 
-            const snackbar = document.getElementById("snackbar");
+        const snackbar = document.getElementById("snackbar");
 
-            snackbar.innerHTML = message;
-            snackbar.className = "show " + type;
+        snackbar.innerHTML = message;
+        snackbar.className = "show " + type;
 
-            setTimeout(() => {
-                snackbar.className = snackbar.className.replace("show", "");
-            }, 3000);
-        }
+        setTimeout(() => {
+            snackbar.className = snackbar.className.replace("show", "");
+        }, 3000);
+    }
 
-        <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
+    <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
 
-            showSnackbar("✅ Message sent successfully.", "success");
+    showSnackbar("✅ Message sent successfully.", "success");
 
-        <?php } ?>
+    <?php } ?>
 
-        <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
+    <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
 
-            showSnackbar("❌ Failed to send message.", "error");
+    showSnackbar("❌ Failed to send message.", "error");
 
-        <?php } ?>
+    <?php } ?>
     </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
     <script>
-        pdfjsLib.GlobalWorkerOptions.workerSrc =
-            'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
     </script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", () => {
 
-            const loader = document.getElementById("pageLoader");
+        const loader = document.getElementById("pageLoader");
 
-            document.querySelectorAll("a[href]").forEach(link => {
+        document.querySelectorAll("a[href]").forEach(link => {
 
-                link.addEventListener("click", function (e) {
+            link.addEventListener("click", function(e) {
 
-                    const href = this.getAttribute("href");
+                const href = this.getAttribute("href");
 
-                    // Ignore anchors, javascript links and new tabs
-                    if (
-                        href.startsWith("#") ||
-                        href.startsWith("javascript:") ||
-                        this.target === "_blank"
-                    ) {
-                        return;
-                    }
+                // Ignore anchors, javascript links and new tabs
+                if (
+                    href.startsWith("#") ||
+                    href.startsWith("javascript:") ||
+                    this.target === "_blank"
+                ) {
+                    return;
+                }
 
-                    e.preventDefault();
+                e.preventDefault();
 
-                    loader.classList.add("show");
+                loader.classList.add("show");
 
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 500);
-
-                });
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500);
 
             });
 
         });
 
-        window.addEventListener("pageshow", function (event) {
+    });
 
-            const loader = document.getElementById("pageLoader");
+    window.addEventListener("pageshow", function(event) {
 
+        const loader = document.getElementById("pageLoader");
+
+        loader.classList.remove("show");
+
+        if (event.persisted) {
             loader.classList.remove("show");
-
-            if (event.persisted) {
-                loader.classList.remove("show");
-            }
-
-        });
-
-        const floatingContact = document.querySelector(".floating-contact");
-        const floatingBtn = document.getElementById("floatingBtn");
-        const floatingIcon = document.getElementById("floatingIcon");
-
-        const STORAGE_KEY = "floatingContactOpen";
-        const SCROLL_KEY = "floatingContactScrollY";
-
-        // Toggle handler
-        floatingBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            toggleFloating();
-        });
-
-        function toggleFloating() {
-            floatingContact.classList.toggle("active");
-            const isActive = floatingContact.classList.contains("active");
-
-            floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
-
-            // Persist state
-            sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
         }
 
-        // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
-        document.querySelectorAll(".contact-option").forEach(link => {
-            link.addEventListener("click", () => {
-                sessionStorage.setItem(SCROLL_KEY, window.scrollY);
-            });
-        });
+    });
 
-        // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
-        window.addEventListener("DOMContentLoaded", () => {
+    const floatingContact = document.querySelector(".floating-contact");
+    const floatingBtn = document.getElementById("floatingBtn");
+    const floatingIcon = document.getElementById("floatingIcon");
+
+    const STORAGE_KEY = "floatingContactOpen";
+    const SCROLL_KEY = "floatingContactScrollY";
+
+    // Toggle handler
+    floatingBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFloating();
+    });
+
+    function toggleFloating() {
+        floatingContact.classList.toggle("active");
+        const isActive = floatingContact.classList.contains("active");
+
+        floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
+
+        // Persist state
+        sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
+    }
+
+    // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
+    document.querySelectorAll(".contact-option").forEach(link => {
+        link.addEventListener("click", () => {
+            sessionStorage.setItem(SCROLL_KEY, window.scrollY);
+        });
+    });
+
+    // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
+    window.addEventListener("DOMContentLoaded", () => {
+        const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+        if (wasActive) {
+            floatingContact.classList.add("active");
+            floatingIcon.className = "ti ti-x";
+        }
+
+        const savedScroll = sessionStorage.getItem(SCROLL_KEY);
+        if (savedScroll) {
+            window.scrollTo(0, parseInt(savedScroll, 10));
+            sessionStorage.removeItem(SCROLL_KEY); // one-time restore
+        }
+    });
+
+    // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
+    window.addEventListener("pageshow", (event) => {
+        if (event.persisted) {
             const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-            if (wasActive) {
-                floatingContact.classList.add("active");
-                floatingIcon.className = "ti ti-x";
-            }
+            floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
+            floatingContact.classList.toggle("active", wasActive);
+        }
+    });
 
-            const savedScroll = sessionStorage.getItem(SCROLL_KEY);
-            if (savedScroll) {
-                window.scrollTo(0, parseInt(savedScroll, 10));
-                sessionStorage.removeItem(SCROLL_KEY); // one-time restore
-            }
-        });
+    new Swiper(".productSwiper", {
 
-        // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
-        window.addEventListener("pageshow", (event) => {
-            if (event.persisted) {
-                const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-                floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
-                floatingContact.classList.toggle("active", wasActive);
-            }
-        });
+        effect: "coverflow",
 
-        new Swiper(".productSwiper", {
+        grabCursor: true,
 
-            effect: "coverflow",
+        centeredSlides: true,
 
-            grabCursor: true,
+        slidesPerView: "auto",
 
-            centeredSlides: true,
+        loop: true,
 
-            slidesPerView: "auto",
+        speed: 500,
 
-            loop: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false
+        },
 
-            speed: 500,
+        coverflowEffect: {
 
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false
-            },
+            rotate: 25,
 
-            coverflowEffect: {
+            stretch: 0,
 
-                rotate: 25,
+            depth: 180,
 
-                stretch: 0,
+            modifier: 1,
 
-                depth: 180,
+            slideShadows: false,
 
-                modifier: 1,
+            scale: .85
 
-                slideShadows: false,
+        }
 
-                scale: .85
-
-            }
-
-        });
+    });
     </script>
 
 </body>
