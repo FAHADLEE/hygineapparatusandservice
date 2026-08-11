@@ -380,7 +380,7 @@ Cleaning Equipment Tamil Nadu
                             <h3 class="form-title">Send us a <span class="gradient-text">Message</span></h3>
 
 
-                            <form id="contactForm" action="./pages/Contact/send_mail.php" method="POST">
+                            <form id="contactForm" action="pages/Contact/send_mail.php" method="POST">
                                 <div class="seperation">
                                     <input type="text" name="name" placeholder="Your Name" required
                                         style="width:100%; padding:14px 18px; border-radius:10px; border:1px solid var(--glass-border); background:var(--primary); margin-bottom:12px;" />
