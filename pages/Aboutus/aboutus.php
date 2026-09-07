@@ -14,622 +14,622 @@
         rel="stylesheet" />
 
     <style>
-        body {
-            overflow: visible !important;
-            height: auto !important;
-            scrollbar-width: none;
+    body {
+        overflow: visible !important;
+        height: auto !important;
+        scrollbar-width: none;
 
 
-            -ms-overflow-style: none;
+        -ms-overflow-style: none;
+    }
+
+    .about-page {
+        padding-top: 100px;
+        overflow: visible;
+        min-height: 100vh;
+
+    }
+
+
+    .about-hero {
+
+        margin: auto;
+        padding: 40px 80px 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        position: relative;
+    }
+
+
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-content p {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        font-size: 17px;
+        max-width: 520px;
+    }
+
+    .hero-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-image-wrapper::before {
+        content: '';
+        position: absolute;
+        inset: -20px;
+        border-radius: 30px;
+        background: var(--gradient);
+        opacity: 0.05;
+        z-index: -1;
+        animation: floatGlow 6s ease-in-out infinite;
+    }
+
+    @keyframes floatGlow {
+
+        0%,
+        100% {
+            transform: translateY(0px) scale(1);
         }
 
-        .about-page {
-            padding-top: 100px;
-            overflow: visible;
-            min-height: 100vh;
+        50% {
+            transform: translateY(-10px) scale(1.02);
+        }
+    }
 
+    .hero-image-wrapper img {
+        width: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        box-shadow: var(--shadow);
+        transition: all 0.5s ease;
+    }
+
+    .hero-image-wrapper:hover img {
+        transform: scale(1.02);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .stat {
+        background: var(--secondary);
+        border: 1px solid var(--glass-border);
+        padding: 20px;
+        border-radius: 16px;
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        cursor: default;
+    }
+
+    .stat:hover {
+        transform: translateY(-5px);
+        border-color: rgba(0, 212, 255, 0.15);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .stat h2 {
+        font-size: 32px;
+        font-weight: 800;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1.2;
+    }
+
+    .stat span {
+        color: var(--text-secondary);
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about-section {
+        max-width: 1400px;
+        margin: 60px auto;
+        padding: 0 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .about-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about-image-wrapper::before {
+        content: '';
+        position: absolute;
+        inset: -15px;
+        border-radius: 30px;
+        background: var(--gradient);
+        opacity: 0.05;
+        z-index: -1;
+        animation: floatGlow 6s ease-in-out infinite 1s;
+    }
+
+    .about-image-wrapper img {
+        width: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        box-shadow: var(--shadow);
+        transition: all 0.5s ease;
+    }
+
+    .about-image-wrapper:hover img {
+        transform: scale(1.02);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .about-image-badge {
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+        background: var(--primary);
+        border: 1px solid var(--glass-border);
+        border-radius: 16px;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: var(--shadow);
+        animation: float 4s ease-in-out infinite 2s;
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px);
         }
 
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+
+    .about-image-badge i {
+        font-size: 28px;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .about-image-badge div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-image-badge .badge-number {
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--text);
+    }
+
+    .about-image-badge .badge-label {
+        font-size: 12px;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about-content h2 {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .about-content p {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        font-size: 15px;
+    }
+
+    .about-content .about-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 8px;
+    }
+
+    .about-content .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+        background: var(--secondary);
+        border-radius: 10px;
+        border: 1px solid var(--glass-border);
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .about-content .feature-item:hover {
+        border-color: rgba(0, 212, 255, 0.15);
+        transform: translateX(4px);
+    }
+
+    .about-content .feature-item i {
+        color: var(--accent);
+        font-size: 18px;
+    }
+
+    /* ===== PRODUCTS SECTION ===== */
+    .products-section {
+        max-width: 1400px;
+        margin: auto;
+        padding: 40px 80px 80px;
+        position: relative;
+    }
+
+    .products-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at 50% 30%, rgba(0, 212, 255, 0.03), transparent 60%);
+        pointer-events: none;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section-header .section-tag {
+        margin-bottom: 12px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .section-subtitle {
+        color: var(--text-secondary);
+        font-size: 16px;
+        margin-top: 8px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .product-card {
+        background: var(--primary);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        padding: 30px 20px;
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    .product-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        background: var(--gradient);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+        padding: 2px;
+    }
+
+    .product-card:hover::before {
+        opacity: 1;
+    }
+
+    .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-hover);
+        border-color: transparent;
+    }
+
+    .product-card .icon-wrapper {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        background: rgba(0, 212, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+        transition: all 0.4s ease;
+    }
+
+    .product-card:hover .icon-wrapper {
+        background: rgba(0, 212, 255, 0.1);
+        transform: scale(1.05) rotate(-4deg);
+    }
+
+    .product-card i {
+        font-size: 30px;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .product-card h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 4px;
+    }
+
+    .product-card .product-count {
+        font-size: 12px;
+        color: var(--text-light);
+        font-weight: 400;
+    }
+
+    .product-card .arrow-hint {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 14px;
+        color: var(--text-light);
+        transition: all 0.3s ease;
+    }
+
+    .product-card:hover .arrow-hint {
+        color: var(--accent);
+        transform: translateX(4px);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+
+        .about-hero,
+        .about-section {
+            grid-template-columns: 1fr;
+            padding: 40px 40px;
+            gap: 40px;
+        }
 
         .about-hero {
-
-            margin: auto;
-            padding: 40px 80px 60px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-        }
-
-
-
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            padding-top: 20px;
         }
 
         .hero-content h1 {
-            font-size: 48px;
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -1.5px;
+            font-size: 40px;
         }
 
-        .hero-content p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            font-size: 17px;
-            max-width: 520px;
-        }
-
-        .hero-image {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-image-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 500px;
-        }
-
-        .hero-image-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: -20px;
-            border-radius: 30px;
-            background: var(--gradient);
-            opacity: 0.05;
-            z-index: -1;
-            animation: floatGlow 6s ease-in-out infinite;
-        }
-
-        @keyframes floatGlow {
-
-            0%,
-            100% {
-                transform: translateY(0px) scale(1);
-            }
-
-            50% {
-                transform: translateY(-10px) scale(1.02);
-            }
-        }
-
-        .hero-image-wrapper img {
-            width: 100%;
-            border-radius: 30px;
-            object-fit: cover;
-            box-shadow: var(--shadow);
-            transition: all 0.5s ease;
-        }
-
-        .hero-image-wrapper:hover img {
-            transform: scale(1.02);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin-top: 20px;
-        }
-
-        .stat {
-            background: var(--secondary);
-            border: 1px solid var(--glass-border);
-            padding: 20px;
-            border-radius: 16px;
-            text-align: center;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            cursor: default;
-        }
-
-        .stat:hover {
-            transform: translateY(-5px);
-            border-color: rgba(0, 212, 255, 0.15);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .stat h2 {
-            font-size: 32px;
-            font-weight: 800;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.2;
-        }
-
-        .stat span {
-            color: var(--text-secondary);
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        /* ===== ABOUT SECTION ===== */
-        .about-section {
-            max-width: 1400px;
-            margin: 60px auto;
-            padding: 0 80px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .about-image {
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .about-image-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 500px;
-        }
-
-        .about-image-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: -15px;
-            border-radius: 30px;
-            background: var(--gradient);
-            opacity: 0.05;
-            z-index: -1;
-            animation: floatGlow 6s ease-in-out infinite 1s;
-        }
-
-        .about-image-wrapper img {
-            width: 100%;
-            border-radius: 30px;
-            object-fit: cover;
-            box-shadow: var(--shadow);
-            transition: all 0.5s ease;
-        }
-
-        .about-image-wrapper:hover img {
-            transform: scale(1.02);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .about-image-badge {
-            position: absolute;
-            bottom: -15px;
-            right: -15px;
-            background: var(--primary);
-            border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            padding: 16px 20px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            box-shadow: var(--shadow);
-            animation: float 4s ease-in-out infinite 2s;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-8px);
-            }
-        }
-
-        .about-image-badge i {
-            font-size: 28px;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .about-image-badge div {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .about-image-badge .badge-number {
-            font-size: 20px;
-            font-weight: 800;
-            color: var(--text);
-        }
-
-        .about-image-badge .badge-label {
-            font-size: 12px;
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
-
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .about-content h2 {
-            font-size: 42px;
-            font-weight: 700;
-            line-height: 1.1;
-        }
-
-        .about-content p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            font-size: 15px;
-        }
-
-        .about-content .about-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-top: 8px;
-        }
-
-        .about-content .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 16px;
-            background: var(--secondary);
-            border-radius: 10px;
-            border: 1px solid var(--glass-border);
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .about-content .feature-item:hover {
-            border-color: rgba(0, 212, 255, 0.15);
-            transform: translateX(4px);
-        }
-
-        .about-content .feature-item i {
-            color: var(--accent);
-            font-size: 18px;
-        }
-
-        /* ===== PRODUCTS SECTION ===== */
-        .products-section {
-            max-width: 1400px;
-            margin: auto;
-            padding: 40px 80px 80px;
-            position: relative;
-        }
-
-        .products-section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse at 50% 30%, rgba(0, 212, 255, 0.03), transparent 60%);
-            pointer-events: none;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-header .section-tag {
-            margin-bottom: 12px;
-        }
-
+        .about-content h2,
         .section-title {
-            font-size: 42px;
-            font-weight: 700;
-            line-height: 1.1;
-        }
-
-        .section-subtitle {
-            color: var(--text-secondary);
-            font-size: 16px;
-            margin-top: 8px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 36px;
         }
 
         .product-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .hero-stats {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .products-section {
+            padding: 40px 40px 60px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-page {
+            padding-top: 70px;
+            /* Same as service page */
+        }
+
+        .about-hero {
+            margin-top: 0;
+            padding: 20px 24px 40px;
+        }
+
+        .hero-content h1 {
+            font-size: 32px;
+        }
+
+        .hero-content p {
+            font-size: 15px;
+        }
+
+        .hero-stats {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+        }
+
+        .stat {
+            padding: 16px 12px;
+        }
+
+        .stat h2 {
+            font-size: 24px;
+        }
+
+        .about-section {
+            padding: 0 24px;
+            gap: 30px;
+        }
+
+        .about-content h2 {
+            font-size: 30px;
+        }
+
+        .about-content .about-features {
+            grid-template-columns: 1fr;
+        }
+
+        .about-image-badge {
+            bottom: -10px;
+            right: -10px;
+            padding: 12px 16px;
+        }
+
+        .about-image-badge i {
+            font-size: 20px;
+        }
+
+        .about-image-badge .badge-number {
+            font-size: 16px;
+        }
+
+        .products-section {
+            padding: 20px 24px 40px;
+        }
+
+        .section-title {
+            font-size: 30px;
+        }
+
+        .product-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
         }
 
         .product-card {
-            background: var(--primary);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            padding: 30px 20px;
-            text-align: center;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            text-decoration: none;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-        }
-
-        .product-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 20px;
-            background: var(--gradient);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            pointer-events: none;
-            padding: 2px;
-        }
-
-        .product-card:hover::before {
-            opacity: 1;
-        }
-
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-hover);
-            border-color: transparent;
+            padding: 20px 14px;
         }
 
         .product-card .icon-wrapper {
-            width: 64px;
-            height: 64px;
-            border-radius: 16px;
-            background: rgba(0, 212, 255, 0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px;
-            transition: all 0.4s ease;
-        }
-
-        .product-card:hover .icon-wrapper {
-            background: rgba(0, 212, 255, 0.1);
-            transform: scale(1.05) rotate(-4deg);
+            width: 50px;
+            height: 50px;
         }
 
         .product-card i {
-            font-size: 30px;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 24px;
         }
 
         .product-card h3 {
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 4px;
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .about-page {
+            padding-top: 70px;
+            /* width: 90%; */
         }
 
-        .product-card .product-count {
-            font-size: 12px;
-            color: var(--text-light);
-            font-weight: 400;
+        .about-hero {
+            margin-top: 0;
+            padding: 20px 24px 40px;
         }
 
-        .product-card .arrow-hint {
-            display: inline-block;
-            margin-top: 12px;
-            font-size: 14px;
-            color: var(--text-light);
-            transition: all 0.3s ease;
+        .hero-stats {
+            grid-template-columns: 1fr;
         }
 
-        .product-card:hover .arrow-hint {
-            color: var(--accent);
-            transform: translateX(4px);
+        .product-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
 
-        /* Responsive */
-        @media (max-width: 1024px) {
-
-            .about-hero,
-            .about-section {
-                grid-template-columns: 1fr;
-                padding: 40px 40px;
-                gap: 40px;
-            }
-
-            .about-hero {
-                padding-top: 20px;
-            }
-
-            .hero-content h1 {
-                font-size: 40px;
-            }
-
-            .about-content h2,
-            .section-title {
-                font-size: 36px;
-            }
-
-            .product-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .hero-stats {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .products-section {
-                padding: 40px 40px 60px;
-            }
+        .hero-content h1 {
+            font-size: 28px;
         }
 
-        @media (max-width: 768px) {
-            .about-page {
-                padding-top: 70px;
-                /* Same as service page */
-            }
-
-            .about-hero {
-                margin-top: 0;
-                padding: 20px 24px 40px;
-            }
-
-            .hero-content h1 {
-                font-size: 32px;
-            }
-
-            .hero-content p {
-                font-size: 15px;
-            }
-
-            .hero-stats {
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 12px;
-            }
-
-            .stat {
-                padding: 16px 12px;
-            }
-
-            .stat h2 {
-                font-size: 24px;
-            }
-
-            .about-section {
-                padding: 0 24px;
-                gap: 30px;
-            }
-
-            .about-content h2 {
-                font-size: 30px;
-            }
-
-            .about-content .about-features {
-                grid-template-columns: 1fr;
-            }
-
-            .about-image-badge {
-                bottom: -10px;
-                right: -10px;
-                padding: 12px 16px;
-            }
-
-            .about-image-badge i {
-                font-size: 20px;
-            }
-
-            .about-image-badge .badge-number {
-                font-size: 16px;
-            }
-
-            .products-section {
-                padding: 20px 24px 40px;
-            }
-
-            .section-title {
-                font-size: 30px;
-            }
-
-            .product-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 14px;
-            }
-
-            .product-card {
-                padding: 20px 14px;
-            }
-
-            .product-card .icon-wrapper {
-                width: 50px;
-                height: 50px;
-            }
-
-            .product-card i {
-                font-size: 24px;
-            }
-
-            .product-card h3 {
-                font-size: 13px;
-            }
+        .about-content h2,
+        .section-title {
+            font-size: 26px;
         }
 
-        @media (max-width: 480px) {
-            .about-page {
-                padding-top: 70px;
-                /* width: 90%; */
-            }
+        .product-card {
+            padding: 16px 12px;
+        }
+    }
 
-            .about-hero {
-                margin-top: 0;
-                padding: 20px 24px 40px;
-            }
-
-            .hero-stats {
-                grid-template-columns: 1fr;
-            }
-
-            .product-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
-
-            .hero-content h1 {
-                font-size: 28px;
-            }
-
-            .about-content h2,
-            .section-title {
-                font-size: 26px;
-            }
-
-            .product-card {
-                padding: 16px 12px;
-            }
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
         }
 
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-            }
-
-            .hero-image-wrapper::before,
-            .about-image-wrapper::before,
-            .about-image-badge {
-                animation: none;
-            }
-
-            .hero-image-wrapper:hover img,
-            .about-image-wrapper:hover img {
-                transform: none;
-            }
+        .hero-image-wrapper::before,
+        .about-image-wrapper::before,
+        .about-image-badge {
+            animation: none;
         }
 
-        ::selection {
-            background: rgba(0, 212, 255, 0.2);
-            color: var(--text);
+        .hero-image-wrapper:hover img,
+        .about-image-wrapper:hover img {
+            transform: none;
         }
+    }
 
-        ::-webkit-scrollbar {
-            /* width: 8px; */
-            display: none !important;
-        }
+    ::selection {
+        background: rgba(0, 212, 255, 0.2);
+        color: var(--text);
+    }
 
-        ::-webkit-scrollbar-track {
-            background: var(--secondary);
-        }
+    ::-webkit-scrollbar {
+        /* width: 8px; */
+        display: none !important;
+    }
 
-        ::-webkit-scrollbar-thumb {
-            background: var(--gradient);
-            border-radius: 4px;
-        }
+    ::-webkit-scrollbar-track {
+        background: var(--secondary);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--gradient);
+        border-radius: 4px;
+    }
     </style>
 </head>
 
@@ -952,8 +952,7 @@
                             </div>
                             <div class="content">
                                 <h4>Location</h4>
-                                <p>DHANALAXMI NAGAR ANEX, 43A, Periya Kolathuvancheri, Iyyappanthangal, Chennai, Tamil
-                                    Nadu 600056</p>
+                                <p>No 15/69 Union Street Thelliyar Agaram, Porur Chennai-600116</p>
 
                             </div>
                         </div>
@@ -1056,311 +1055,309 @@
 
 
     <script>
-        // ===== MOBILE MENU =====
-        const toggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
+    // ===== MOBILE MENU =====
+    const toggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-        toggle.addEventListener('click', () => {
-            toggle.classList.toggle('active');
-            mobileMenu.classList.toggle('open');
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        mobileMenu.classList.toggle('open');
+    });
+
+    function closeMobile() {
+        toggle.classList.remove('active');
+        mobileMenu.classList.remove('open');
+    }
+
+    // ===== NAVBAR SCROLL =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 100);
+    });
+
+    // ===== DROPDOWN TOGGLE =====
+    const dropdown = document.querySelector('.nav-dropdown');
+
+    if (dropdown) {
+
+        dropdown.addEventListener("mouseenter", function() {
+            this.classList.add("open");
         });
 
-        function closeMobile() {
-            toggle.classList.remove('active');
-            mobileMenu.classList.remove('open');
-        }
-
-        // ===== NAVBAR SCROLL =====
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 100);
+        dropdown.addEventListener("mouseleave", function() {
+            this.classList.remove("open");
         });
 
-        // ===== DROPDOWN TOGGLE =====
-        const dropdown = document.querySelector('.nav-dropdown');
+        const link = dropdown.querySelector(".nav-link");
 
-        if (dropdown) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault(); // Prevent navigation when clicking "Products"
+        });
 
-            dropdown.addEventListener("mouseenter", function () {
-                this.classList.add("open");
-            });
+    }
 
-            dropdown.addEventListener("mouseleave", function () {
-                this.classList.remove("open");
-            });
 
-            const link = dropdown.querySelector(".nav-link");
+    // ===== MOBILE PRODUCTS DROPDOWN TOGGLE =====
+    const mobileProductsBtn = document.getElementById("mobileProductsBtn");
 
-            link.addEventListener("click", function (e) {
-                e.preventDefault(); // Prevent navigation when clicking "Products"
-            });
+    if (mobileProductsBtn) {
+        mobileProductsBtn.addEventListener("click", function(e) {
+            e.stopPropagation();
+            this.parentElement.classList.toggle("active");
+        });
+    }
 
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        const mobileDropdown = document.querySelector('.mobile-dropdown');
+        if (mobileDropdown && !mobileDropdown.contains(e.target)) {
+            mobileDropdown.classList.remove('active');
         }
+    });
 
+    // Prevent dropdown content clicks from closing the parent
+    const mobileDropdownContent = document.querySelector('.mobile-dropdown-content');
+    if (mobileDropdownContent) {
+        mobileDropdownContent.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
 
-        // ===== MOBILE PRODUCTS DROPDOWN TOGGLE =====
-        const mobileProductsBtn = document.getElementById("mobileProductsBtn");
-
-        if (mobileProductsBtn) {
-            mobileProductsBtn.addEventListener("click", function (e) {
-                e.stopPropagation();
-                this.parentElement.classList.toggle("active");
-            });
-        }
-
-        // Close dropdowns when clicking outside
-        document.addEventListener('click', function (e) {
-            const mobileDropdown = document.querySelector('.mobile-dropdown');
-            if (mobileDropdown && !mobileDropdown.contains(e.target)) {
-                mobileDropdown.classList.remove('active');
+    // ===== CLOSE MOBILE MENU ON LINK CLICK =====
+    const mobLinks = document.querySelectorAll('.mob-link:not(#mobileProductsBtn)');
+    mobLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (!this.closest('.mobile-dropdown')) {
+                closeMobile();
             }
         });
+    });
 
-        // Prevent dropdown content clicks from closing the parent
-        const mobileDropdownContent = document.querySelector('.mobile-dropdown-content');
-        if (mobileDropdownContent) {
-            mobileDropdownContent.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        }
-
-        // ===== CLOSE MOBILE MENU ON LINK CLICK =====
-        const mobLinks = document.querySelectorAll('.mob-link:not(#mobileProductsBtn)');
-        mobLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                if (!this.closest('.mobile-dropdown')) {
-                    closeMobile();
-                }
-            });
+    // Also close when clicking dropdown items
+    const dropdownItems = document.querySelectorAll('.mobile-dropdown-content a');
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function() {
+            closeMobile();
         });
+    });
+    const brochureModal = document.getElementById("brochureModal");
+    const closeBtn = document.querySelector(".close-btn");
+    const pdfViewer = document.getElementById("pdfViewer");
 
-        // Also close when clicking dropdown items
-        const dropdownItems = document.querySelectorAll('.mobile-dropdown-content a');
-        dropdownItems.forEach(item => {
-            item.addEventListener('click', function () {
-                closeMobile();
-            });
-        });
-        const brochureModal = document.getElementById("brochureModal");
-        const closeBtn = document.querySelector(".close-btn");
-        const pdfViewer = document.getElementById("pdfViewer");
+    const pdfUrl =
+        "../assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
 
-        const pdfUrl =
-            "../assets/Brochure/Hygiene-Apparatus-Brochure.pdf";
+    let pdfLoaded = false;
 
-        let pdfLoaded = false;
+    document.querySelectorAll(".openBrochure").forEach(btn => {
 
-        document.querySelectorAll(".openBrochure").forEach(btn => {
+        btn.addEventListener("click", async function(e) {
 
-            btn.addEventListener("click", async function (e) {
+            e.preventDefault();
 
-                e.preventDefault();
+            brochureModal.style.display = "block";
 
-                brochureModal.style.display = "block";
+            if (!pdfLoaded) {
 
-                if (!pdfLoaded) {
+                pdfLoaded = true;
 
-                    pdfLoaded = true;
-
-                    loadPDF();
-                }
-
-            });
+                loadPDF();
+            }
 
         });
 
-        closeBtn.onclick = () => {
+    });
+
+    closeBtn.onclick = () => {
+
+        brochureModal.style.display = "none";
+
+    }
+
+    window.onclick = (e) => {
+
+        if (e.target === brochureModal) {
 
             brochureModal.style.display = "none";
 
         }
 
-        window.onclick = (e) => {
+    }
 
-            if (e.target === brochureModal) {
+    async function loadPDF() {
 
-                brochureModal.style.display = "none";
+        pdfViewer.innerHTML = "";
 
-            }
+        const loadingTask = pdfjsLib.getDocument(pdfUrl);
 
-        }
+        const pdf = await loadingTask.promise;
 
-        async function loadPDF() {
+        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
 
-            pdfViewer.innerHTML = "";
+            const page = await pdf.getPage(pageNum);
 
-            const loadingTask = pdfjsLib.getDocument(pdfUrl);
+            const viewport = page.getViewport({
+                scale: 1.5
+            });
 
-            const pdf = await loadingTask.promise;
+            const canvas = document.createElement("canvas");
 
-            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+            const context = canvas.getContext("2d");
 
-                const page = await pdf.getPage(pageNum);
+            canvas.width = viewport.width;
 
-                const viewport = page.getViewport({ scale: 1.5 });
+            canvas.height = viewport.height;
 
-                const canvas = document.createElement("canvas");
+            await page.render({
 
-                const context = canvas.getContext("2d");
+                canvasContext: context,
 
-                canvas.width = viewport.width;
+                viewport: viewport
 
-                canvas.height = viewport.height;
+            }).promise;
 
-                await page.render({
-
-                    canvasContext: context,
-
-                    viewport: viewport
-
-                }).promise;
-
-                pdfViewer.appendChild(canvas);
-
-            }
+            pdfViewer.appendChild(canvas);
 
         }
+
+    }
     </script>
 
     <script>
+    function showSnackbar(message, type) {
 
-        function showSnackbar(message, type) {
+        const snackbar = document.getElementById("snackbar");
 
-            const snackbar = document.getElementById("snackbar");
+        snackbar.innerHTML = message;
+        snackbar.className = "show " + type;
 
-            snackbar.innerHTML = message;
-            snackbar.className = "show " + type;
+        setTimeout(() => {
+            snackbar.className = snackbar.className.replace("show", "");
+        }, 3000);
+    }
 
-            setTimeout(() => {
-                snackbar.className = snackbar.className.replace("show", "");
-            }, 3000);
-        }
+    <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
 
-        <?php if (isset($_GET['status']) && $_GET['status'] == "success") { ?>
+    showSnackbar("✅ Message sent successfully.", "success");
 
-            showSnackbar("✅ Message sent successfully.", "success");
+    <?php } ?>
 
-        <?php } ?>
+    <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
 
-        <?php if (isset($_GET['status']) && $_GET['status'] == "error") { ?>
+    showSnackbar("❌ Failed to send message.", "error");
 
-            showSnackbar("❌ Failed to send message.", "error");
-
-        <?php } ?>
-
+    <?php } ?>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
     <script>
-        pdfjsLib.GlobalWorkerOptions.workerSrc =
-            'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
     </script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", () => {
 
-            const loader = document.getElementById("pageLoader");
+        const loader = document.getElementById("pageLoader");
 
-            document.querySelectorAll("a[href]").forEach(link => {
+        document.querySelectorAll("a[href]").forEach(link => {
 
-                link.addEventListener("click", function (e) {
+            link.addEventListener("click", function(e) {
 
-                    const href = this.getAttribute("href");
+                const href = this.getAttribute("href");
 
-                    // Ignore anchors, javascript links and new tabs
-                    if (
-                        href.startsWith("#") ||
-                        href.startsWith("javascript:") ||
-                        this.target === "_blank"
-                    ) {
-                        return;
-                    }
+                // Ignore anchors, javascript links and new tabs
+                if (
+                    href.startsWith("#") ||
+                    href.startsWith("javascript:") ||
+                    this.target === "_blank"
+                ) {
+                    return;
+                }
 
-                    e.preventDefault();
+                e.preventDefault();
 
-                    loader.classList.add("show");
+                loader.classList.add("show");
 
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 500);
-
-                });
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500);
 
             });
 
         });
 
-        window.addEventListener("pageshow", function (event) {
+    });
 
-            const loader = document.getElementById("pageLoader");
+    window.addEventListener("pageshow", function(event) {
 
+        const loader = document.getElementById("pageLoader");
+
+        loader.classList.remove("show");
+
+        if (event.persisted) {
             loader.classList.remove("show");
-
-            if (event.persisted) {
-                loader.classList.remove("show");
-            }
-
-            setTimeout(() => {
-                window.location.href = href;
-            }, 500);
-
-        });
-
-        const floatingContact = document.querySelector(".floating-contact");
-        const floatingBtn = document.getElementById("floatingBtn");
-        const floatingIcon = document.getElementById("floatingIcon");
-
-        const STORAGE_KEY = "floatingContactOpen";
-        const SCROLL_KEY = "floatingContactScrollY";
-
-        // Toggle handler
-        floatingBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            toggleFloating();
-        });
-
-        function toggleFloating() {
-            floatingContact.classList.toggle("active");
-            const isActive = floatingContact.classList.contains("active");
-
-            floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
-
-            // Persist state
-            sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
         }
 
-        // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
-        document.querySelectorAll(".contact-option").forEach(link => {
-            link.addEventListener("click", () => {
-                sessionStorage.setItem(SCROLL_KEY, window.scrollY);
-            });
-        });
+        setTimeout(() => {
+            window.location.href = href;
+        }, 500);
 
-        // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
-        window.addEventListener("DOMContentLoaded", () => {
+    });
+
+    const floatingContact = document.querySelector(".floating-contact");
+    const floatingBtn = document.getElementById("floatingBtn");
+    const floatingIcon = document.getElementById("floatingIcon");
+
+    const STORAGE_KEY = "floatingContactOpen";
+    const SCROLL_KEY = "floatingContactScrollY";
+
+    // Toggle handler
+    floatingBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFloating();
+    });
+
+    function toggleFloating() {
+        floatingContact.classList.toggle("active");
+        const isActive = floatingContact.classList.contains("active");
+
+        floatingIcon.className = isActive ? "ti ti-x" : "ti ti-message-circle";
+
+        // Persist state
+        sessionStorage.setItem(STORAGE_KEY, isActive ? "1" : "0");
+    }
+
+    // Save scroll position whenever the user taps call/whatsapp (they're about to leave)
+    document.querySelectorAll(".contact-option").forEach(link => {
+        link.addEventListener("click", () => {
+            sessionStorage.setItem(SCROLL_KEY, window.scrollY);
+        });
+    });
+
+    // Restore state on load (covers full page reloads after returning from dialer/WhatsApp)
+    window.addEventListener("DOMContentLoaded", () => {
+        const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
+        if (wasActive) {
+            floatingContact.classList.add("active");
+            floatingIcon.className = "ti ti-x";
+        }
+
+        const savedScroll = sessionStorage.getItem(SCROLL_KEY);
+        if (savedScroll) {
+            window.scrollTo(0, parseInt(savedScroll, 10));
+            sessionStorage.removeItem(SCROLL_KEY); // one-time restore
+        }
+    });
+
+    // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
+    window.addEventListener("pageshow", (event) => {
+        if (event.persisted) {
             const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-            if (wasActive) {
-                floatingContact.classList.add("active");
-                floatingIcon.className = "ti ti-x";
-            }
-
-            const savedScroll = sessionStorage.getItem(SCROLL_KEY);
-            if (savedScroll) {
-                window.scrollTo(0, parseInt(savedScroll, 10));
-                sessionStorage.removeItem(SCROLL_KEY); // one-time restore
-            }
-        });
-
-        // Also handle bfcache restores (Safari/Chrome sometimes restore from cache instead of reload)
-        window.addEventListener("pageshow", (event) => {
-            if (event.persisted) {
-                const wasActive = sessionStorage.getItem(STORAGE_KEY) === "1";
-                floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
-                floatingContact.classList.toggle("active", wasActive);
-            }
-        });
-
-
+            floatingIcon.className = wasActive ? "ti ti-x" : "ti ti-message-circle";
+            floatingContact.classList.toggle("active", wasActive);
+        }
+    });
     </script>
 
 
