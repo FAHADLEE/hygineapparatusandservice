@@ -395,9 +395,7 @@
                             </div>
                             <div class="content">
                                 <h4>Location</h4>
-                                <p>No 15/69 Union Street Thelliyar Agaram, Porur Chennai-600116 Iyyappanthangal,
-                                    Chennai, Tamil
-                                    Nadu 600056</p>
+                                <p>No 15/69 Union Street Thelliyar Agaram, Porur Chennai-600116</p>
 
                             </div>
                         </div>
